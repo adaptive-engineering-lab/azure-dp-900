@@ -101,17 +101,21 @@ These tests hardcode the AZ-900 slugs or names and will fail after phase 1:
 - [x] Vercel Authentication turned off so the site is public
 - [x] Supabase auth: Site URL `https://azure-dp-900.vercel.app/`; redirect URLs for `azure-dp-900.vercel.app`, `azure-dp-900-azure-over-lunch.vercel.app` and `localhost:5173`, each at `/auth/callback`
 - [x] Production URL `azure-dp-900.vercel.app` recorded in `exams.config.json`, README, spec and load-test docs
-- [ ] Optional: enable Vercel Web Analytics on the project. Until then `/_vercel/insights/script.js` serves the SPA's HTML and logs one harmless `Unexpected token '<'` console error.
+- [x] Vercel Web Analytics enabled and production redeployed; `/_vercel/insights/script.js` now serves JavaScript
 - [ ] Optional (Pro tier only): Stripe product, Supabase secrets, deploy the three edge functions. See `template/PORTING_CHECKLIST.md` §9.
 
 ## 7. Smoke test on production
 
-- [x] Home page shows "150 questions across 4 domains"; console is clean apart from the analytics script (phase 6)
+- [x] Home page shows "150 questions across 4 domains"; console is clean (fresh tab, after the analytics redeploy)
 - [x] Hard reload on a deep link (e.g. `/learn/quiz`) loads the app rather than a 404
-- [ ] Each of the nine modules opens and plays a quiz (picker lists all nine, grouped by path; sessions not played yet)
-- [ ] Sign up with a real email; `profiles` and `subscriptions` rows appear in the DP-900 project
-- [ ] A finished session lands in `sessions`; `/progress` radar shows the four DP-900 domain labels
-- [ ] `/legal/privacy` and `/legal/terms` show DP-900 and the right operator details
+- [x] Each of the nine modules opens with the right count (18/16/18/16/18/16/16/16/16); "Explore fundamentals of data visualization" played to the results screen as a guest: 6/16, domain breakdown, +110 XP, 1-day streak
+- [ ] Sign up with a real email; `profiles` and `subscriptions` rows appear in the DP-900 project (needs you: magic link to your inbox)
+- [ ] A finished session lands in `sessions` once signed in
+- [x] `/progress` radar shows four axes with the DP-900 domain labels
+- [x] `/legal/privacy` and `/legal/terms` show DP-900, Adaptive Engineering Lab, Belgium, and the Ireland region
+- [ ] `CONTACT_EMAIL` in `frontend/src/lib/legal.ts` is still the placeholder `contact@example.com`, and it's shown on the privacy page. Set a real address.
+- [ ] Privacy policy §8 doesn't mention Vercel Web Analytics (cookieless, now enabled). Consider adding a line.
+- [ ] The spec (§6.1 UX notes, §10.3) promises A/B/C/D keyboard shortcuts, but the quiz has no key handlers (inherited from the AZ-900 app). Build them or drop the claim.
 
 ## 8. Housekeeping
 
