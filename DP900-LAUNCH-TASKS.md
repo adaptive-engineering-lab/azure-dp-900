@@ -94,20 +94,21 @@ These tests hardcode the AZ-900 slugs or names and will fail after phase 1:
 
 ## 6. Git and deployment
 
-- [ ] First commit and push to `adaptive-engineering-lab/azure-dp-900` (the repo has no commits yet)
+- [x] First commit and push to `adaptive-engineering-lab/azure-dp-900` (15c5e54)
 - [ ] Restore `.mcp.json` with `project_ref=bfkuwrjhytqivfrbppxe`, if you still want the project Supabase MCP server. The file disappeared from this folder.
-- [ ] Vercel: create the project from the GitHub repo. Leave Root Directory empty and Framework Preset unset, because `vercel.json` does `cd frontend` itself.
-- [ ] Vercel env vars for Production and Preview: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` (same values as `frontend/.env.local`). Only `VITE_*` vars are read.
-- [ ] Turn off Vercel Deployment Protection if the site should be public
-- [ ] Supabase → Authentication → URL Configuration: Site URL `https://<vercel-url>/`, redirect URLs `https://<vercel-url>/auth/callback` and `http://localhost:5173/auth/callback`
-- [ ] Put the real production URL into `exams.config.json` → `productionUrl` and the README
+- [x] Vercel: project `azure-dp-900` (`prj_DRvNC4K7tRFWbQOAi4L1g7O0FvAL`, Azure Over Lunch team), Git-linked to `main`, Root Directory empty, framework null
+- [x] Vercel env vars for Production and Preview: `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`
+- [x] Vercel Authentication turned off so the site is public
+- [x] Supabase auth: Site URL `https://azure-dp-900.vercel.app/`; redirect URLs for `azure-dp-900.vercel.app`, `azure-dp-900-azure-over-lunch.vercel.app` and `localhost:5173`, each at `/auth/callback`
+- [x] Production URL `azure-dp-900.vercel.app` recorded in `exams.config.json`, README, spec and load-test docs
+- [ ] Optional: enable Vercel Web Analytics on the project. Until then `/_vercel/insights/script.js` serves the SPA's HTML and logs one harmless `Unexpected token '<'` console error.
 - [ ] Optional (Pro tier only): Stripe product, Supabase secrets, deploy the three edge functions. See `template/PORTING_CHECKLIST.md` §9.
 
 ## 7. Smoke test on production
 
-- [ ] Home page shows "150 questions across 4 domains"; console is clean
-- [ ] Hard reload on a deep link (e.g. `/learn/quiz`) loads the app rather than a 404
-- [ ] Each of the nine modules opens and plays a quiz
+- [x] Home page shows "150 questions across 4 domains"; console is clean apart from the analytics script (phase 6)
+- [x] Hard reload on a deep link (e.g. `/learn/quiz`) loads the app rather than a 404
+- [ ] Each of the nine modules opens and plays a quiz (picker lists all nine, grouped by path; sessions not played yet)
 - [ ] Sign up with a real email; `profiles` and `subscriptions` rows appear in the DP-900 project
 - [ ] A finished session lands in `sessions`; `/progress` radar shows the four DP-900 domain labels
 - [ ] `/legal/privacy` and `/legal/terms` show DP-900 and the right operator details

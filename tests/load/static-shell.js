@@ -10,13 +10,10 @@ import { check } from 'k6';
  * would turn a cached load into a full re-download for every user.
  *
  * Run:
- *   APP_URL=https://<dp-900-vercel-url> k6 run tests/load/static-shell.js
+ *   APP_URL=https://azure-dp-900.vercel.app k6 run tests/load/static-shell.js
  */
 
-// No default: the DP-900 app has no production URL yet, and falling back to
-// another deployment would load-test the wrong app.
-if (!__ENV.APP_URL) throw new Error('Set APP_URL (see tests/load/README.md).');
-const APP_URL = __ENV.APP_URL.replace(/\/$/, '');
+const APP_URL = (__ENV.APP_URL || 'https://azure-dp-900.vercel.app').replace(/\/$/, '');
 
 export const options = {
   stages: [

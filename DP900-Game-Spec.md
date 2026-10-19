@@ -2,7 +2,7 @@
 
 **Version**: 4.0  
 **Date**: 2026-10-19  
-**Status**: Pre-launch — app ported, bank seeded, not yet deployed
+**Status**: Deployed 2026-10-19; launch smoke test pending
 
 > Section numbers are load-bearing. `frontend/src/lib/spacing.ts` cites §9,
 > the constitution cites §8 and §13, and the feature specs under `specs/`
@@ -26,8 +26,9 @@ multiple-choice and true/false questions, one quiz per Microsoft Learn module,
 drives a quiz mode plus a spaced-repetition Daily Review that pulls whatever is
 due today.
 
-Not yet deployed. The production URL goes here, and into
-`exams.config.json` → `productionUrl`, once the Vercel project exists.
+Live at **<https://azure-dp-900.vercel.app>** (Vercel project `azure-dp-900`
+in the Azure Over Lunch team; `azure-dp-900-azure-over-lunch.vercel.app`
+is the same deployment).
 
 ### 1.2 Goals
 
@@ -486,7 +487,7 @@ Tracked in detail in `DP900-LAUNCH-TASKS.md`.
 
 - [x] Swap taxonomy, types, DB constraint and branding to DP-900
 - [x] Import the nine module quizzes (150 items) and seed Supabase
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
 
 ### Phase 6 — Next
 

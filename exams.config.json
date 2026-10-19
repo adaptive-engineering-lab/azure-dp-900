@@ -6,7 +6,7 @@
       "certificationTitle": "Microsoft Certified: Azure Data Fundamentals",
       "level": "Fundamentals",
       "passMark": 700,
-      "productionUrl": "",
+      "productionUrl": "azure-dp-900.vercel.app",
       "skillsMeasuredAsOf": "2026-07-21",
 
       "domains": [

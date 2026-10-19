@@ -2,7 +2,7 @@
 
 A mobile-first study app for the **Microsoft Certified: Azure Data Fundamentals** exam (Exam DP-900). Multiple-choice quizzes across all four exam domains, with spaced repetition, a daily review queue, progress dashboards, and a cosmetic Pro tier — built as a Progressive Web App that works offline once installed.
 
-Live: not yet deployed — see [`DP900-LAUNCH-TASKS.md`](DP900-LAUNCH-TASKS.md) phase 6.
+Live: [azure-dp-900.vercel.app](https://azure-dp-900.vercel.app/)
 
 ---
 
@@ -630,7 +630,7 @@ If a Pro user's entitlement lapses while Solar or Forest is active, the provider
 Supabase Auth, magic-link email only (no password).
 
 - Sign-in page at `/sign-in` calls `signInWithOtp({ email, options: { emailRedirectTo: '<origin>/auth/callback' } })`.
-- The redirect URL `https://<dp-900-vercel-url>/auth/callback` must be on Supabase's allow list (Project Settings → Authentication → URL Configuration).
+- The redirect URL `https://azure-dp-900.vercel.app/auth/callback` must be on Supabase's allow list (Project Settings → Authentication → URL Configuration).
 - After clicking the link, the user lands on `/auth/callback`, which calls `supabase.auth.exchangeCodeForSession(...)`, persists the session in localStorage, and redirects home.
 - [`AuthProvider`](frontend/src/lib/auth/AuthProvider.tsx) wraps the app, exposes `{ user, status, signOut }`, and triggers the guest→authed migration on transitions.
 
@@ -662,7 +662,7 @@ The foundation is merged and verified locally; **going live requires operator st
      STRIPE_SECRET_KEY=sk_test_... \
      STRIPE_WEBHOOK_SECRET=whsec_... \
      STRIPE_PRICE_ID=price_... \
-     APP_URL=https://<dp-900-vercel-url>
+     APP_URL=https://azure-dp-900.vercel.app
    ```
 3. Deploy the Edge Functions:
    ```
@@ -840,8 +840,8 @@ Vite bakes `VITE_*` vars into the bundle at **build time**. After changing them,
 
 Auth provider config (Project Settings → Authentication):
 
-- **Site URL**: `https://<dp-900-vercel-url>/`
-- **Redirect URLs**: `https://<dp-900-vercel-url>/auth/callback` (add `http://localhost:5173/auth/callback` to test the magic-link flow locally).
+- **Site URL**: `https://azure-dp-900.vercel.app/`
+- **Redirect URLs**: `https://azure-dp-900.vercel.app/auth/callback` (add `http://localhost:5173/auth/callback` to test the magic-link flow locally).
 - **Email provider**: Default (Supabase-hosted). Customize the magic-link email template under Authentication → Email Templates if you want branding.
 
 ### CI
@@ -891,7 +891,7 @@ Only needed if you're drafting new bank items with the CLI.
 STRIPE_SECRET_KEY=sk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 STRIPE_PRICE_ID=price_...
-APP_URL=https://<dp-900-vercel-url>
+APP_URL=https://azure-dp-900.vercel.app
 # SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY are auto-populated.
 ```
 
