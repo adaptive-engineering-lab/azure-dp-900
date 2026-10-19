@@ -3,6 +3,7 @@ import type { Session, User } from '@supabase/supabase-js';
 import { supabase } from '../supabase';
 import { useAppStore } from '../store';
 import { pushProfileToServer } from '../migration/syncProfile';
+import { startLiveSync } from '../sync/liveSync';
 
 interface AuthContextValue {
   user: User | null;
@@ -57,6 +58,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (timer) clearTimeout(timer);
       unsub();
     };
+  }, [session?.user?.id]);
+
+  // Upload each finished session and every progress change while signed in.
+  useEffect(() => {
+    const userId = session?.user?.id;
+    if (!userId) return;
+    const sync = startLiveSync(supabase(), userId);
+    return () => sync.stop();
   }, [session?.user?.id]);
 
   const value: AuthContextValue = {

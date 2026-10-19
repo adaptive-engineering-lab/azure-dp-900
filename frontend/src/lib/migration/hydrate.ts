@@ -8,6 +8,7 @@ import {
 } from '../store';
 import { SESSIONS_CAP } from '../store/sessions';
 import { pullProfileFromServer } from './syncProfile';
+import { withoutLiveSync } from '../sync/liveSync';
 
 interface ProgressRow {
   question_id: string;
@@ -68,7 +69,7 @@ export async function hydrateStoreFromServer(
     completedAt: r.completed_at,
   }));
 
-  useAppStore.getState().hydrateFromServer({ progress, sessions, profile });
+  withoutLiveSync(() => useAppStore.getState().hydrateFromServer({ progress, sessions, profile }));
 
   return { progressCount: Object.keys(progress).length, sessionCount: sessions.length };
 }

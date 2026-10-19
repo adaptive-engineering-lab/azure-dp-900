@@ -109,8 +109,12 @@ These tests hardcode the AZ-900 slugs or names and will fail after phase 1:
 - [x] Home page shows "150 questions across 4 domains"; console is clean (fresh tab, after the analytics redeploy)
 - [x] Hard reload on a deep link (e.g. `/learn/quiz`) loads the app rather than a 404
 - [x] Each of the nine modules opens with the right count (18/16/18/16/18/16/16/16/16); "Explore fundamentals of data visualization" played to the results screen as a guest: 6/16, domain breakdown, +110 XP, 1-day streak
-- [ ] Sign up with a real email; `profiles` and `subscriptions` rows appear in the DP-900 project (needs you: magic link to your inbox)
-- [ ] A finished session lands in `sessions` once signed in
+- [x] Sign up with a real email; `profiles` and `subscriptions` rows appear in the DP-900 project (signed up 21:40 UTC; trigger rows present: free/active)
+- [ ] A finished session lands in `sessions` once signed in. **Fails.** After a signed-in quiz and a hard reload there are still 0 `sessions` and 0 `user_progress` rows. The profile did sync (streak 1, `last_active` 2026-10-19), and Postgres and the API logged no errors, so the app never attempted the upload. Root cause is the inherited sync design:
+  - the store never writes to Supabase; uploads happen only in `MigrationPrompt`, once per page load
+  - `hydrateFromServer` *replaces* local `sessions`/`progress` with the server's (empty) lists instead of merging, so local results can be wiped before they're uploaded (multiple tabs make this likely: the magic link opens a second tab, and `useCrossTabStorageSync` rehydrates from localStorage)
+  - `executeMigration` returns early when no local progress maps to a live question, skipping the session insert
+  - **Fixed 2026-10-19, awaiting your retest:** `lib/sync/liveSync.ts` uploads new sessions and changed progress while signed in (debounced, retried on failure); `hydrateFromServer` merges by session id and `mergeProgress` instead of replacing; `executeMigration` no longer skips sessions, and inserts them with `ignoreDuplicates`. Covered by `frontend/tests/unit/sync.test.ts`.
 - [x] `/progress` radar shows four axes with the DP-900 domain labels
 - [x] `/legal/privacy` and `/legal/terms` show DP-900, Adaptive Engineering Lab, Belgium, and the Ireland region
 - [ ] `CONTACT_EMAIL` in `frontend/src/lib/legal.ts` is still the placeholder `contact@example.com`, and it's shown on the privacy page. Set a real address.

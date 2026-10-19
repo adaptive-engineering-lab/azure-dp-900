@@ -12,6 +12,7 @@ import {
 import { makeDefaultProfile, levelFromXp, type GuestProfile, type Level } from './profile';
 import type { GuestProgress, GuestProgressMap, Rating } from './progress';
 import { SESSIONS_CAP, type GuestSession, type SessionMode } from './sessions';
+import { mergeProgressMaps, mergeSessions } from '../migration/merge';
 
 interface AppState {
   preferences: SessionPreferences;
@@ -166,9 +167,11 @@ export const useAppStore = create<AppState>()(
                 level: (Math.max(s.profile.level, profile.level) as Level),
               }
             : s.profile;
+          // Merge rather than replace: anything recorded locally but not yet
+          // uploaded must survive the server copy arriving.
           return {
-            progress,
-            sessions: sessions.slice(0, SESSIONS_CAP),
+            progress: mergeProgressMaps(s.progress, progress),
+            sessions: mergeSessions(s.sessions, sessions, SESSIONS_CAP),
             profile: nextProfile,
           };
         }),
