@@ -1,0 +1,110 @@
+{
+  "exams": [
+    {
+      "code": "DP-900",
+      "title": "Microsoft Azure Data Fundamentals",
+      "certificationTitle": "Microsoft Certified: Azure Data Fundamentals",
+      "level": "Fundamentals",
+      "passMark": 700,
+      "productionUrl": "",
+      "skillsMeasuredAsOf": "2026-07-21",
+
+      "domains": [
+        {
+          "slug": "core-data-concepts",
+          "label": "Describe core data concepts",
+          "weight": "25-30",
+          "topics": [
+            "Structured Data", "Semi-structured Data", "Unstructured Data",
+            "Data File Formats", "Data Stores and Databases",
+            "Azure Datastores for Common Use Cases",
+            "Transactional Workloads", "Analytical Workloads",
+            "Database Administrator", "Data Engineer", "Data Analyst"
+          ]
+        },
+        {
+          "slug": "relational-data",
+          "label": "Identify considerations for relational data on Azure",
+          "weight": "20-25",
+          "topics": [
+            "Relational Data Features", "Normalization", "SQL Statements",
+            "Database Objects", "Azure SQL Database",
+            "Azure SQL Managed Instance", "SQL Server on Azure Virtual Machines",
+            "Azure Database for PostgreSQL", "Azure Database for MySQL"
+          ]
+        },
+        {
+          "slug": "non-relational-data",
+          "label": "Describe considerations for working with non-relational data on Azure",
+          "weight": "15-20",
+          "topics": [
+            "Azure Blob Storage", "Azure Data Lake Storage Gen2", "Azure Files",
+            "Azure Table Storage", "Azure Cosmos DB Use Cases",
+            "Azure Cosmos DB APIs"
+          ]
+        },
+        {
+          "slug": "analytics-workloads",
+          "label": "Describe an analytics workload on Azure",
+          "weight": "25-30",
+          "topics": [
+            "Data Ingestion and Processing", "Analytical Data Stores",
+            "Azure Databricks", "Microsoft Fabric",
+            "Batch vs Streaming Data", "Real-time Analytics Services",
+            "Power BI Capabilities", "Power BI Data Models",
+            "Data Visualizations"
+          ]
+        }
+      ],
+
+      "learningPaths": [
+        {
+          "id": "lp1",
+          "title": "Introduction to Microsoft Azure Data core data concepts",
+          "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+          "moduleCount": 2,
+          "domains": ["core-data-concepts"]
+        },
+        {
+          "id": "lp2",
+          "title": "Introduction to Microsoft Azure Data relational data in Azure",
+          "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+          "moduleCount": 2,
+          "domains": ["relational-data"]
+        },
+        {
+          "id": "lp3",
+          "title": "Introduction to Microsoft Azure Data non-relational data in Azure",
+          "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+          "moduleCount": 2,
+          "domains": ["non-relational-data"]
+        },
+        {
+          "id": "lp4",
+          "title": "Introduction to Microsoft Azure Data analytics in Azure",
+          "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+          "moduleCount": 3,
+          "domains": ["analytics-workloads"]
+        }
+      ],
+
+      "questionTargets": {
+        "total": 150,
+        "perDomain": {
+          "core-data-concepts": 34,
+          "relational-data": 34,
+          "non-relational-data": 34,
+          "analytics-workloads": 48
+        },
+        "byType": {
+          "mcq": 150
+        }
+      },
+
+      "gameModes": {
+        "mcq": true,
+        "codeReview": false
+      }
+    }
+  ]
+}

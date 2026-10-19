@@ -1,0 +1,54 @@
+import { createClient } from '@supabase/supabase-js';
+import { loadSeedEnv } from './lib/env.js';
+
+const { supabaseUrl, anonKey } = loadSeedEnv();
+const client = createClient(supabaseUrl, anonKey);
+
+const { data: counts } = await client.from('questions').select('domain, type');
+const byDomain: Record<string, Record<string, number>> = {};
+for (const row of counts ?? []) {
+  byDomain[row.domain] = byDomain[row.domain] ?? {};
+  byDomain[row.domain][row.type] = (byDomain[row.domain][row.type] ?? 0) + 1;
+}
+console.log('\n=== Bank by domain × type ===');
+console.table(byDomain);
+
+const { data: mcq } = await client
+  .from('questions')
+  .select('topic, content')
+  .eq('type', 'mcq')
+  .eq('domain', 'core-data-concepts')
+  .limit(1)
+  .single();
+console.log('\n=== Sample MCQ (core-data-concepts) ===');
+const mc = mcq!.content as {
+  question: string;
+  options: Record<string, string>;
+  correct: string;
+  explanation: string;
+};
+console.log('Q:', mc.question);
+for (const [letter, text] of Object.entries(mc.options)) console.log(`  ${letter}. ${text}`);
+console.log('Correct:', mc.correct);
+console.log('Why:', mc.explanation);
+
+const { data: cr } = await client
+  .from('questions')
+  .select('topic, content')
+  .eq('type', 'code-review')
+  .eq('domain', 'relational-data')
+  .limit(1)
+  .single();
+console.log('\n=== Sample code-review (relational-data) ===');
+const c = cr!.content as {
+  sub_mode: string;
+  language: string;
+  snippet: string;
+  prompt: string;
+  options: Record<string, string>;
+  correct: string;
+  explanation: string;
+};
+console.log('Sub-mode:', c.sub_mode, '/', 'Language:', c.language);
+console.log('Prompt:', c.prompt);
+console.log('Correct:', c.correct);

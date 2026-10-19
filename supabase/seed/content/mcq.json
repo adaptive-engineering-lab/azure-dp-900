@@ -1,0 +1,4094 @@
+[
+  {
+    "id": "b9372382-e868-5a31-9a5e-e88227901bc8",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A collection of customer JSON documents in which some customers have two email addresses, some have one, and some have none is an example of which kind of data?",
+      "options": {
+        "A": "Structured data",
+        "B": "Unstructured data",
+        "C": "Semi-structured data",
+        "D": "Vector data"
+      },
+      "correct": "C",
+      "explanation": "Semi-structured data has some structure but allows variation between instances, such as a varying number of email addresses; JSON is a common format for it. Not A: structured data uses a fixed schema where every record has the same fields. Not B: unstructured data (images, audio, documents) has no specific structure, but these documents do. Not D: vector data is a numerical representation (embeddings) of content used for semantic similarity."
+    }
+  },
+  {
+    "id": "edd5558e-b8ef-5804-aa3b-48160b25c4d8",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which file format is columnar and widely used in data lakes and lakehouses?",
+      "options": {
+        "A": "Parquet",
+        "B": "Avro",
+        "C": "CSV",
+        "D": "XML"
+      },
+      "correct": "A",
+      "explanation": "Parquet is a columnar Apache format widely used in data lakes and lakehouses. Not B: Avro is the classic trap — it's row-based. Not C/D: CSV and XML are human-readable text formats, not optimized columnar formats."
+    }
+  },
+  {
+    "id": "4ec25315-7299-5b59-91b3-f1c27dd78532",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which statement correctly describes the Avro file format?",
+      "options": {
+        "A": "It stores column data together in row groups, with metadata describing each chunk",
+        "B": "It adds a transaction log on top of another format to support ACID transactions",
+        "C": "It's a human-readable format that defines elements using tags in angle brackets",
+        "D": "It's row-based, with a JSON header describing the structure of binary record blocks"
+      },
+      "correct": "D",
+      "explanation": "Avro is row-based; each file has a JSON header describing the structure, and data is stored as binary in blocks of records. Not A: that describes Parquet (row groups, column chunks, metadata). Not B: that describes Delta Lake. Not C: that describes XML."
+    }
+  },
+  {
+    "id": "6c5a73ae-15c2-59d0-a712-ed6677aaa0f7",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Delta Lake builds on which file format by adding a transaction log?",
+      "options": {
+        "A": "Avro",
+        "B": "Parquet",
+        "C": "JSON",
+        "D": "CSV"
+      },
+      "correct": "B",
+      "explanation": "Delta Lake is Parquet plus a transaction log, enabling ACID transactions, versioning, and reliable updates on data lake files. Not A, C, D: Delta Lake doesn't build on Avro, JSON, or CSV."
+    }
+  },
+  {
+    "id": "de96596e-c561-5a62-a94a-d4a6c20d176d",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "In a document database, what is stored as the value for each key?",
+      "options": {
+        "A": "A JSON document that the system is optimized to parse and query",
+        "B": "A set of columns divided into logically related column families",
+        "C": "A node that is linked to other nodes to define relationships",
+        "D": "A value in any format that the database stores without interpreting"
+      },
+      "correct": "A",
+      "explanation": "A document database is a specific form of key-value database where the value is a JSON document the system is optimized to parse and query. Not B: that's a column family database. Not C: that's a graph database. Not D: that's a plain key-value database — close, but the point of a document store is that the database does understand the JSON."
+    }
+  },
+  {
+    "id": "99c20adf-ff47-53f9-b866-1078d26afc41",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which of the following is NOT one of the four common types of nonrelational database described in this module?",
+      "options": {
+        "A": "Key-value",
+        "B": "Graph",
+        "C": "Column family",
+        "D": "Time-series"
+      },
+      "correct": "D",
+      "explanation": "The four types covered are key-value, document, column family, and graph. Time-series stores exist, but they aren't one of the four this module (and the exam objective) uses."
+    }
+  },
+  {
+    "id": "ec4e057e-88d6-5a37-9776-f96f9f7403ec",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "While $40 is being transferred from Account A to Account B, a separate query checks both balances. Which ACID property ensures that query can't return A's balance after the debit alongside B's balance before the credit?",
+      "options": {
+        "A": "Atomicity",
+        "B": "Consistency",
+        "C": "Isolation",
+        "D": "Durability"
+      },
+      "correct": "C",
+      "explanation": "Isolation means concurrent transactions can't interfere with one another, so the balance check sees a consistent state. Not A: atomicity is \"all or nothing\" for the transfer itself. Not B: consistency means a transaction moves the database from one valid state to another. Not D: durability means committed changes survive a restart."
+    }
+  },
+  {
+    "id": "d09c17ca-8543-5bff-9442-e2cdd1c0d03e",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "In a medallion architecture, which layer holds cleansed, conformed data with duplicates removed and data types standardized?",
+      "options": {
+        "A": "Bronze",
+        "B": "Silver",
+        "C": "Gold",
+        "D": "Semantic"
+      },
+      "correct": "B",
+      "explanation": "Silver holds cleansed and conformed data. Not A: Bronze is raw, as-is data. Not C: Gold is aggregated, business-ready data. Not D: \"semantic\" isn't a medallion layer; a semantic model is an analytical model used by Power BI."
+    }
+  },
+  {
+    "id": "47331fbd-ff46-5626-a535-021e9a6b07d9",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which pattern extracts and loads data first, then applies transformations afterward, and is common in modern lakehouses?",
+      "options": {
+        "A": "ETL",
+        "B": "OLAP",
+        "C": "Schema-on-write",
+        "D": "ELT"
+      },
+      "correct": "D",
+      "explanation": "ELT loads data first and transforms afterward, common in modern lakehouses. Not A: ETL transforms before loading. Not B: OLAP is an analytical model, not a load pattern. Not C: schema-on-write enforces structure when data is stored."
+    }
+  },
+  {
+    "id": "d6485492-cd80-58a2-b0a0-14dc13102412",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which type of analytical store combines the flexible, scalable storage of a data lake with the relational querying semantics of a data warehouse?",
+      "options": {
+        "A": "Data lakehouse",
+        "B": "OLAP cube",
+        "C": "Data lake",
+        "D": "Semantic model"
+      },
+      "correct": "A",
+      "explanation": "A data lakehouse combines data lake storage with data warehouse-style relational querying. Not B/D: an OLAP cube or semantic model is an analytical model layered on top of a store, not a storage architecture. Not C: a plain data lake is file storage without the warehouse semantics."
+    }
+  },
+  {
+    "id": "8dc40b88-ea43-5503-a339-634a1934bf8a",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? In a relational database, normalization means intentionally storing a customer's details on every order row so queries run faster.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Normalization eliminates duplicate values so a customer's details are stored only once and referenced by key. Introducing duplication to speed up queries is denormalization, which is sometimes used in lakehouse table schemas."
+    }
+  },
+  {
+    "id": "8d57c422-701d-5f44-ad60-8731f3fdb3e2",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? An Avro file stores its header (describing the data structure) as JSON, but stores the data itself as binary.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Avro stores the header describing the data structure as JSON, and the data as binary in blocks of records."
+    }
+  },
+  {
+    "id": "3e30ebfe-6c0e-5ead-aaab-6f1ae7a9f895",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? In a typical enterprise analytics architecture, data scientists often work directly with files in the data lake, while business users more commonly consume preaggregated data through reports or dashboards.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "The module describes data scientists working with files in the data lake, data analysts querying the warehouse, and business users consuming preaggregated data in reports or dashboards."
+    }
+  },
+  {
+    "id": "f1a6ceab-3273-52fc-b5ed-61e12310da41",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? XML has largely replaced JSON for representing data because XML is less verbose.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "It's the other way around: XML has largely been superseded by the less verbose JSON format."
+    }
+  },
+  {
+    "id": "fdc8353d-7e6a-531e-bbb4-a88e90c868cd",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? OLTP systems are optimized mainly for read operations, which is why they're typically described as read-only or read-mostly.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "OLTP databases are optimized for both reads and writes to support CRUD operations. \"Read-only or read-mostly\" describes analytical processing systems."
+    }
+  },
+  {
+    "id": "acc71049-b043-56f9-bcb6-fe0c787b3dd9",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-1",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? The Bronze layer of a medallion architecture keeps data as it arrived from source systems, so it can be reprocessed if requirements change.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Bronze stores raw data as-is, with no transformations, preserving the original records for reprocessing."
+    }
+  },
+  {
+    "id": "05688f1c-4f98-53f5-9987-ca83a637ebe0",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-2",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A retailer needs to store product photos, customer-uploaded PDF receipts, and recordings of support calls in a central location for later analysis. How is this data best classified, and what are these files commonly called?",
+      "options": {
+        "A": "Semi-structured data, stored as JSON documents",
+        "B": "Unstructured data, commonly referred to as BLOBs",
+        "C": "Structured data, stored as delimited text files",
+        "D": "Semi-structured data, stored in a column family database"
+      },
+      "correct": "B",
+      "explanation": "Images, documents, and audio are unstructured data, and binary files like these are commonly called BLOBs (Binary Large Objects). Not A/D: there's no field-based structure to call these semi-structured. Not C: structured data has a fixed tabular schema."
+    }
+  },
+  {
+    "id": "6dbdcc46-f102-5c08-8afd-16b94b06903d",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore core data concepts",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-core-data-concepts",
+      "level-2",
+      "order:1",
+      "module:explore-core-data-concepts",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A banking application starts a transfer of $40 from Account A (balance $100) to Account B (balance $50). The server loses power after Account A is debited but before Account B is credited. When the system restarts, Account A still shows $100. Which ACID property explains this, and what kind of workload is this?",
+      "options": {
+        "A": "Durability; an OLTP workload",
+        "B": "Isolation; an OLTP workload",
+        "C": "Atomicity; an OLTP workload",
+        "D": "Atomicity; an OLAP workload"
+      },
+      "correct": "C",
+      "explanation": "Atomicity means a transaction succeeds completely or fails completely; because the credit never happened, the debit is rolled back. Bank transfers are a classic OLTP workload. Not A: durability applies to committed transactions, and this one never committed. Not B: isolation is about concurrent transactions. Not D: the property is right, but OLAP is analytical, read-mostly processing."
+    }
+  },
+  {
+    "id": "de20dbce-6b0a-5650-a4b2-f776d6e38205",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which role is responsible for granting or denying users access to data in a database, and for implementing backup and recovery plans?",
+      "options": {
+        "A": "Data engineer",
+        "B": "Data analyst",
+        "C": "AI engineer",
+        "D": "Database administrator"
+      },
+      "correct": "D",
+      "explanation": "Database administrators manage permissions, backups, and restores, and are responsible for availability and performance. Not A: data engineers build pipelines and integration. Not B: analysts explore data and build visualizations. Not C: AI engineers build AI-powered features."
+    }
+  },
+  {
+    "id": "f4a2285d-2cb0-56bd-b1d6-da43ab6ce44b",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which role identifies data governance rules, applies data cleaning routines, and owns the management and monitoring of data pipelines?",
+      "options": {
+        "A": "Data engineer",
+        "B": "Database administrator",
+        "C": "Data analyst",
+        "D": "Data architect"
+      },
+      "correct": "A",
+      "explanation": "Data engineers manage data integration infrastructure: cleaning routines, governance rules, and pipelines, including monitoring them. Not B: DBAs manage the databases themselves. Not C: analysts consume data for insights. Not D: data architect is mentioned only as an additional role, without these responsibilities attached."
+    }
+  },
+  {
+    "id": "309f1cce-7d16-5d76-a876-6bb9ad976484",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which Azure SQL option gives maximum configurability, along with full management responsibility for the owner?",
+      "options": {
+        "A": "Azure SQL Database",
+        "B": "Azure SQL VM (SQL Server on a virtual machine)",
+        "C": "Azure SQL Managed Instance",
+        "D": "Azure Database for PostgreSQL"
+      },
+      "correct": "B",
+      "explanation": "Azure SQL VM is a virtual machine with SQL Server installed, giving maximum configurability with full management responsibility. Not A: Azure SQL Database is fully managed PaaS with the least configuration control. Not C: Managed Instance sits in the middle. Not D: PostgreSQL isn't part of the Azure SQL family."
+    }
+  },
+  {
+    "id": "4e0bb1f6-0896-51bd-8035-9952a8d6d465",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which service is described as a hybrid relational-object database that lets you store custom data types with their own nonrelational properties?",
+      "options": {
+        "A": "Azure Database for MySQL",
+        "B": "Azure SQL Managed Instance",
+        "C": "Azure Cosmos DB",
+        "D": "Azure Database for PostgreSQL"
+      },
+      "correct": "D",
+      "explanation": "PostgreSQL is a hybrid relational-object database that supports custom data types. Not A: MySQL is described as simple-to-use and common in LAMP apps. Not B: Managed Instance is SQL Server. Not C: Cosmos DB is a nonrelational NoSQL database."
+    }
+  },
+  {
+    "id": "e4393b40-6819-533d-b911-d2156c1c76e4",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Data engineers use Azure Storage to host data lakes. What turns blob storage into a data lake?",
+      "options": {
+        "A": "Moving blobs into the Archive access tier",
+        "B": "Storing data as page blobs instead of block blobs",
+        "C": "A hierarchical namespace that organizes files into folders",
+        "D": "Grouping files into Azure Table storage partitions"
+      },
+      "correct": "C",
+      "explanation": "A data lake is blob storage with a hierarchical namespace, so files can be organized in folders in a distributed file system. Not A: Archive is a cost tier. Not B: page blobs are for random read/write such as VM disks. Not D: Table storage is key-value storage, not a data lake."
+    }
+  },
+  {
+    "id": "1af920ff-733d-52ba-94a2-798140c54d72",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A data analyst needs a fully managed, standalone big data analytics platform for high-performance querying of log files and IoT telemetry that include a timestamp. Which service fits best?",
+      "options": {
+        "A": "Azure Data Explorer",
+        "B": "Azure Stream Analytics",
+        "C": "Microsoft Purview",
+        "D": "Azure Data Factory"
+      },
+      "correct": "A",
+      "explanation": "Azure Data Explorer is a standalone big data analytics platform for high-performance querying of timestamped log and telemetry data. Not B: Stream Analytics processes data streams in real time with a query and writes to an output; it's not described as the place analysts query logs. Not C: Purview is governance. Not D: Data Factory builds pipelines."
+    }
+  },
+  {
+    "id": "937c9665-69f1-5cb2-acd8-0b98f7298555",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "Which service creates a map of your data and tracks data lineage across multiple sources to support enterprise-wide governance?",
+      "options": {
+        "A": "Microsoft Fabric IQ",
+        "B": "Azure Data Explorer",
+        "C": "Azure Databricks",
+        "D": "Microsoft Purview"
+      },
+      "correct": "D",
+      "explanation": "Microsoft Purview maps data and tracks lineage for governance and discoverability. Not A: Fabric IQ provides shared business-entity definitions (and is in preview). Not B: Data Explorer queries telemetry. Not C: Databricks is a Spark analytics platform."
+    }
+  },
+  {
+    "id": "bf86ed44-b6bb-5b9c-8988-2f4bb0669a69",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "What is the single, shared storage layer that Microsoft Fabric is built on?",
+      "options": {
+        "A": "Azure Files",
+        "B": "OneLake",
+        "C": "Delta Lake",
+        "D": "Unity Catalog"
+      },
+      "correct": "B",
+      "explanation": "Fabric runs on one shared storage layer called OneLake. Not A: Azure Files is a network file share service. Not C: Delta Lake is a storage format, not the storage layer. Not D: Unity Catalog is Azure Databricks' governance layer."
+    }
+  },
+  {
+    "id": "f47291ff-fa77-5f98-b860-663eac700bcf",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? In some organizations, the same person might act as a database administrator when provisioning a database and as a data engineer when building a pipeline from it.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Roles define responsibilities, not people; the module gives exactly this example of one person doing both."
+    }
+  },
+  {
+    "id": "339f41d7-94fd-5d0e-b43a-bcb451376575",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? Azure SQL Managed Instance allows less flexible configuration than Azure SQL Database, in exchange for less administrative responsibility.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "It's reversed. Managed Instance allows more flexible configuration than Azure SQL Database, with more administrative responsibility."
+    }
+  },
+  {
+    "id": "780d1679-3fba-554d-b6ce-e18f5522c26e",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? Microsoft Fabric is a platform-as-a-service (PaaS) offering in which you provision and manage your own Spark clusters.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Fabric is software-as-a-service (SaaS). You don't manage servers or clusters; you create workspaces and items, and Microsoft runs the infrastructure."
+    }
+  },
+  {
+    "id": "6d1b14ae-73db-5375-8136-827eb9d9da75",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? Azure Data Factory's capabilities are built into Microsoft Fabric as Fabric Data Factory.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Fabric Data Factory is described as the next generation of Azure Data Factory, built into Fabric."
+    }
+  },
+  {
+    "id": "9c14aa0d-8d52-5e5c-8a1e-89b73d1eed33",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? Azure Cosmos DB instances are always provisioned and managed by database administrators, never by software developers.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "DBAs sometimes manage Cosmos DB, but often software developers manage NoSQL storage as part of the application architecture."
+    }
+  },
+  {
+    "id": "e86acfc6-3371-552a-9572-927aa7de768e",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-1",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "True or false? Microsoft Foundry is the platform that AI engineers use to build, test, and deploy AI-powered solutions.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Microsoft Foundry is Microsoft's PaaS for enterprise AI that AI engineers use to design, test, and deploy solutions."
+    }
+  },
+  {
+    "id": "a5ce8ca4-2302-5225-bc4e-ff9ff676d9f5",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-2",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A company runs an on-premises web application built on a Linux, Apache, MySQL, and PHP stack. It wants a managed relational database in Azure that needs minimal changes to the application. Which service should it choose?",
+      "options": {
+        "A": "Azure Database for MySQL",
+        "B": "Azure Database for PostgreSQL",
+        "C": "Azure SQL Database",
+        "D": "Azure Cosmos DB"
+      },
+      "correct": "A",
+      "explanation": "Azure Database for MySQL is the managed service for MySQL, which is commonly used in LAMP stack apps. Not B: PostgreSQL is a different engine and would require migration work. Not C: Azure SQL Database runs the SQL Server engine. Not D: Cosmos DB is nonrelational."
+    }
+  },
+  {
+    "id": "e42f236f-25ea-5eb8-b9d2-c044cfcfa221",
+    "type": "mcq",
+    "domain": "core-data-concepts",
+    "topic": "Explore data roles and services",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "core-data-concepts",
+      "explore-data-roles-and-services",
+      "level-2",
+      "order:2",
+      "module:explore-roles-responsibilities-world-of-data",
+      "path:lp1",
+      "primary-path:lp1"
+    ],
+    "content": {
+      "question": "A data engineering team already has Apache Spark skills and wants a code-first, notebook-based platform for large-scale data engineering over Delta Lake tables. Analysts on the team also want to query and visualize data in the same notebooks. Which service fits best?",
+      "options": {
+        "A": "Azure Stream Analytics",
+        "B": "Azure Data Explorer",
+        "C": "Azure Databricks",
+        "D": "Azure Data Factory"
+      },
+      "correct": "C",
+      "explanation": "Azure Databricks is built on Apache Spark, optimized for large-scale data engineering over Delta Lake, suits code-first notebook workflows, and lets analysts query and visualize data in notebooks. Not A: Stream Analytics is a real-time stream processing engine. Not B: Data Explorer focuses on log and telemetry queries. Not D: Data Factory is a pipeline service, not a notebook platform."
+    }
+  },
+  {
+    "id": "0777069e-9d7e-575d-a271-c0e3cfc72b8d",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "In a relational table, what does each row represent?",
+      "options": {
+        "A": "One attribute of an entity",
+        "B": "A single instance of an entity",
+        "C": "A relationship between two tables",
+        "D": "A data type that a column enforces"
+      },
+      "correct": "B",
+      "explanation": "Each row represents a single instance of an entity, such as one customer or one order. Not A: attributes are columns. Not C: relationships are expressed with keys. Not D: data types are defined per column."
+    }
+  },
+  {
+    "id": "ab8c7c08-6785-5c92-ac57-6f55599758f0",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which of the following is NOT one of the practical steps of normalization described in this module?",
+      "options": {
+        "A": "Store each entity in its own table",
+        "B": "Put each discrete attribute in its own column",
+        "C": "Identify each row uniquely with a primary key",
+        "D": "Group related attributes into one column"
+      },
+      "correct": "D",
+      "explanation": "Normalization does the opposite: it separates each discrete attribute into its own column. The other three options are steps from the module's simple definition (the fourth step is using foreign keys to link entities)."
+    }
+  },
+  {
+    "id": "3955030f-f4f6-5cd9-84a6-ea9931a3104f",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "A LineItem table identifies each row by the unique combination of OrderNo and ItemNo. What is this kind of key called?",
+      "options": {
+        "A": "A composite key",
+        "B": "A foreign key",
+        "C": "A surrogate key",
+        "D": "A partition key"
+      },
+      "correct": "A",
+      "explanation": "A composite key is a key based on a unique combination of multiple columns; the module uses this exact LineItem example. Not B: a foreign key references another table's primary key. Not C: surrogate keys aren't covered here. Not D: partition keys belong to Azure Table storage and Cosmos DB, not relational tables."
+    }
+  },
+  {
+    "id": "62070394-3142-5688-9079-366adeddb70f",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "To which category of SQL statement does GRANT belong?",
+      "options": {
+        "A": "Data Definition Language (DDL)",
+        "B": "Data Manipulation Language (DML)",
+        "C": "Data Control Language (DCL)",
+        "D": "Transaction Control Language (TCL)"
+      },
+      "correct": "C",
+      "explanation": "GRANT, DENY, and REVOKE are DCL statements for managing permissions. Not A: DDL creates and changes objects. Not B: DML reads and changes rows. Not D: TCL isn't one of the three groups in this module."
+    }
+  },
+  {
+    "id": "5df7a451-0fe3-5953-8460-92b59ee20db7",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which of these is a DDL statement?",
+      "options": {
+        "A": "UPDATE",
+        "B": "INSERT",
+        "C": "REVOKE",
+        "D": "ALTER"
+      },
+      "correct": "D",
+      "explanation": "ALTER modifies an object's structure, so it's DDL (with CREATE, DROP, RENAME). Not A/B: UPDATE and INSERT are DML. Not C: REVOKE is DCL."
+    }
+  },
+  {
+    "id": "7e08c9b6-f673-5dcf-92d9-751553a5fd55",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which SQL dialect does Azure SQL Managed Instance use?",
+      "options": {
+        "A": "PL/SQL",
+        "B": "Transact-SQL",
+        "C": "PL/pgSQL",
+        "D": "CQL"
+      },
+      "correct": "B",
+      "explanation": "Transact-SQL is used by SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure VMs. Not A: PL/SQL is Oracle. Not C: PL/pgSQL is PostgreSQL. Not D: CQL is Cassandra's query language."
+    }
+  },
+  {
+    "id": "f44e9947-2faa-59db-87ee-e1de6cc2470f",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "What happens when you run DELETE FROM Product; with no WHERE clause?",
+      "options": {
+        "A": "Every row in the Product table is removed",
+        "B": "The Product table itself is dropped from the database",
+        "C": "The database asks you to confirm before deleting rows",
+        "D": "Only rows that contain NULL values are removed"
+      },
+      "correct": "A",
+      "explanation": "Without WHERE, DELETE removes every row. Not B: removing the table is DROP, a DDL statement. Not C: SQL has no \"are you sure?\" prompt. Not D: there's no implicit filter."
+    }
+  },
+  {
+    "id": "7df3badb-ff91-5794-9c0b-471cf95498fd",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which database object is a virtual table based on the results of a SELECT query?",
+      "options": {
+        "A": "Index",
+        "B": "Stored procedure",
+        "C": "View",
+        "D": "Foreign key"
+      },
+      "correct": "C",
+      "explanation": "A view is a virtual table based on a SELECT query. Not A: an index is a sorted copy of column data with pointers to rows. Not B: a stored procedure is SQL code run on command. Not D: a foreign key is a column that references another table."
+    }
+  },
+  {
+    "id": "951cef96-aedb-520b-b916-a913a5756a07",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "What is the main trade-off of creating many indexes on a table?",
+      "options": {
+        "A": "Queries that filter on the indexed columns become slower",
+        "B": "Insert, update, and delete operations can become slower",
+        "C": "The table can no longer be given a primary key",
+        "D": "Any views based on the table must be recreated"
+      },
+      "correct": "B",
+      "explanation": "Every insert, update, and delete must also maintain the indexes, which can slow those operations; indexes also consume storage. Not A: indexes speed up those queries. Not C/D: indexes don't affect primary keys or views."
+    }
+  },
+  {
+    "id": "0b93de48-adf6-5c9f-b7c4-7de56e945110",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "What is a column defined with NOT NULL called?",
+      "options": {
+        "A": "A primary key column",
+        "B": "A foreign key column",
+        "C": "A composite column",
+        "D": "A mandatory column"
+      },
+      "correct": "D",
+      "explanation": "NOT NULL columns are called mandatory columns. Not A: a primary key uniquely identifies rows; NOT NULL alone doesn't make a column a key. Not B/C: those describe key roles, not nullability."
+    }
+  },
+  {
+    "id": "f3cfa622-ca7d-5b66-a4dc-0b7dde57beb9",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? A relational database management system can enforce referential integrity, for example preventing an order from referencing a customer that doesn't exist.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "An RDBMS can enforce referential integrity so a foreign key value must match an existing primary key."
+    }
+  },
+  {
+    "id": "3c84b076-754d-55be-8840-f2d145b04d71",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? SQL enforces the rule that every table must have a primary key.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Every table should have a primary key, but SQL doesn't enforce this rule."
+    }
+  },
+  {
+    "id": "260734b3-1515-5904-bd1d-4c6b7e3cb0f8",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? A SELECT query that returns many rows always returns them in primary key order unless you add an ORDER BY clause.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Without ORDER BY, rows don't necessarily appear in any specific sequence."
+    }
+  },
+  {
+    "id": "abbad7ca-1b2e-59cc-b0f0-dcb614ed5c9f",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? For a table with very few rows, the query optimizer may ignore an index and simply read the whole table.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "For small tables, an index may be no more efficient than a full read, and the query optimizer ignores it."
+    }
+  },
+  {
+    "id": "80b8ddba-68bf-5e02-80d3-b217c37e21cf",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? In a normalized schema, changing a customer's address requires modifying only a single row.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Because each customer is stored once in an entity table, an address change touches one row."
+    }
+  },
+  {
+    "id": "b4044026-5a3a-54b7-a412-c1eb16426802",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-1",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? Stored procedures and user account management are part of the ANSI SQL standard, so they work identically across SQL Server, PostgreSQL, and MySQL.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "These are proprietary extensions, not part of the standard. T-SQL, PL/pgSQL, and MySQL each implement them differently."
+    }
+  },
+  {
+    "id": "1cb3f2c4-f1c1-5eaa-8488-ad18833dd046",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-2",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "An application frequently needs to change a product's name, given the product's ID. The team wants this logic encapsulated inside the database and run on demand with parameters. What should they create?",
+      "options": {
+        "A": "A view that joins the Product and Order tables",
+        "B": "An index on the Name column of the Product table",
+        "C": "A stored procedure that takes the product ID and new name",
+        "D": "An ALTER TABLE statement that renames the Name column"
+      },
+      "correct": "C",
+      "explanation": "A stored procedure encapsulates programmatic logic with parameters; the module's RenameProduct example matches this exactly. Not A: a view only reads data. Not B: an index only speeds up searches. Not D: renaming the column changes the schema, not a product's name value."
+    }
+  },
+  {
+    "id": "edea59bc-00a4-5cce-8acc-f7231b05f3a3",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore fundamental relational data concepts",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-fundamental-relational-data-concepts",
+      "level-2",
+      "order:3",
+      "module:explore-relational-data-offerings",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "A company tracks sales in a spreadsheet. Each row is one item sold, and the customer's name and full address are stored together in one cell that repeats on every row. When a customer moves, many rows must be edited, and it's hard to filter customers by city. What's the best fix?",
+      "options": {
+        "A": "Split the data into entity tables linked by keys, with address parts in separate columns",
+        "B": "Add an index on the combined CustomerAddress column so that updates run faster",
+        "C": "Create a view over the spreadsheet data that returns each customer only once",
+        "D": "Store each order as a JSON document that includes the full customer details"
+      },
+      "correct": "A",
+      "explanation": "This is normalization: each entity in its own table, each discrete attribute in its own column, linked by keys. The address is then stored once and city becomes filterable. Not B: an index doesn't remove duplication. Not C: a view doesn't change how data is stored, so updates still hit many rows. Not D: embedding full customer details keeps the duplication."
+    }
+  },
+  {
+    "id": "a3128a51-693e-5878-a27f-b100f5b6241e",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which Azure SQL option is an infrastructure-as-a-service (IaaS) solution?",
+      "options": {
+        "A": "Azure SQL Database (single database)",
+        "B": "Azure SQL Managed Instance",
+        "C": "SQL Server on Azure Virtual Machines",
+        "D": "Azure SQL Database (elastic pool)"
+      },
+      "correct": "C",
+      "explanation": "SQL Server on Azure VMs virtualizes compute, storage, and networking, which makes it IaaS. Not A/B/D: Azure SQL Database (single or elastic pool) and Managed Instance are both PaaS."
+    }
+  },
+  {
+    "id": "7bea43fb-f6a2-5316-b50b-8ab171a5d811",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which option provides near-100% compatibility with on-premises SQL Server while automating backups, patching, and other maintenance?",
+      "options": {
+        "A": "Azure SQL Database",
+        "B": "Azure SQL Managed Instance",
+        "C": "SQL Server on Azure Virtual Machines",
+        "D": "Azure Database for MySQL"
+      },
+      "correct": "B",
+      "explanation": "Managed Instance offers near-100% compatibility with on-premises SQL Server plus automated updates, backups, and recovery. Not A: Azure SQL Database supports most core database-level capabilities but isn't fully compatible. Not C: VMs are fully compatible but you manage backups and patching yourself. Not D: MySQL isn't SQL Server."
+    }
+  },
+  {
+    "id": "60b1010d-a7ea-517d-9284-1f69f2206cf9",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "For SQL Server on Azure Virtual Machines, what does the availability SLA cover?",
+      "options": {
+        "A": "The SQL Server processes and all hosted databases",
+        "B": "Both the virtual machine and the SQL Server engine",
+        "C": "Only databases configured for zone redundancy",
+        "D": "The virtual machines, not the SQL Server processes on them"
+      },
+      "correct": "D",
+      "explanation": "The SLA covers the VMs, not the SQL Server processes running on them. Not A/B: this is the trap; the SQL Server engine is your responsibility. Not C: zone redundancy affects the SLA for PaaS options, not this."
+    }
+  },
+  {
+    "id": "c04e208a-0c54-5da2-b371-6c6ec3a2521e",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Which Azure SQL Database option lets several databases share a set of resources, reducing cost when their workloads peak at different times?",
+      "options": {
+        "A": "Elastic pool",
+        "B": "Hyperscale",
+        "C": "Serverless compute tier",
+        "D": "Instance pool"
+      },
+      "correct": "A",
+      "explanation": "An elastic pool lets multiple databases share pooled resources, ideal when workloads vary over time (the module's payroll and reporting example). Not B: Hyperscale is for very large databases. Not C: serverless scales compute for a single database. Not D: instance pools are a Managed Instance feature."
+    }
+  },
+  {
+    "id": "78156a58-0b05-5732-8fca-106dfcc9fb4e",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "According to this module, how large can a database in the Azure SQL Database Hyperscale tier grow?",
+      "options": {
+        "A": "Up to 4 TB",
+        "B": "Up to 16 TB",
+        "C": "Up to 128 TB",
+        "D": "Up to 1 PB"
+      },
+      "correct": "C",
+      "explanation": "The module states Hyperscale supports databases up to 128 TB, with rapid scaling and fast backup and restore regardless of size."
+    }
+  },
+  {
+    "id": "14a1db5d-50a2-53d7-bbd1-f1cd66c50d3c",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "Azure Database for MySQL is based on which MySQL edition?",
+      "options": {
+        "A": "Enterprise",
+        "B": "Community",
+        "C": "Standard",
+        "D": "Developer"
+      },
+      "correct": "B",
+      "explanation": "Azure Database for MySQL is based on MySQL Community Edition. Not A/C: Standard and Enterprise are the commercial editions. Not D: not mentioned."
+    }
+  },
+  {
+    "id": "84415c57-6741-5116-a03f-466fe3d7961f",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "What point-in-time restore retention does Azure Database for MySQL provide?",
+      "options": {
+        "A": "7 days by default, up to 14 days",
+        "B": "14 days by default, up to 35 days",
+        "C": "7 days by default, up to 35 days",
+        "D": "35 days by default, up to 90 days"
+      },
+      "correct": "C",
+      "explanation": "Automatic backups support point-in-time restore for up to 35 days, with seven days by default."
+    }
+  },
+  {
+    "id": "9ec039cc-5917-514f-929e-47f2add61c47",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "When Query Store is enabled in Azure Database for PostgreSQL, where is the captured query information saved?",
+      "options": {
+        "A": "In a query_store table inside each user database",
+        "B": "In the pgAdmin tool's local repository",
+        "C": "In an audit log in an Azure Storage account",
+        "D": "In a database named azure_sys"
+      },
+      "correct": "D",
+      "explanation": "Query Store data is saved in a database named azure_sys, and you query the query_store.qs_view view to see it. Not A/B/C: none of these is where Query Store data goes."
+    }
+  },
+  {
+    "id": "422bfe78-1978-5d4f-b54a-443bd5ce12a6",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? An Azure SQL Database server is a physical machine dedicated to hosting your databases.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "A SQL Database server is a logical construct: a central administrative point for databases, logins, firewall rules, auditing, and failover groups."
+    }
+  },
+  {
+    "id": "b349739a-39df-5ccd-a69e-48e3bcc12e43",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? In the General Purpose service tier, a serverless Azure SQL Database can pause automatically when it's inactive.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "In the serverless tier you're billed for compute used, and in General Purpose the database can pause automatically when inactive."
+    }
+  },
+  {
+    "id": "96fd01dd-46db-5bcf-8fa5-f97d9dc48f04",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? Azure SQL Managed Instance supports both SQL Server logins (username and password) and logins integrated with Microsoft Entra ID.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Managed Instance supports SQL Server Database engine logins and Microsoft Entra ID logins (which enable single sign-on)."
+    }
+  },
+  {
+    "id": "e8e79924-b796-5c92-8539-0f257db6e2d0",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? You can use pgAdmin with Azure Database for PostgreSQL to perform server backup and restore, just as you would on-premises.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "You can still connect with pgAdmin, but server-focused functions like backup and restore aren't available because Microsoft manages the server."
+    }
+  },
+  {
+    "id": "561d0d7b-69b1-569e-ad41-01bb00cc7d90",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? Advanced Threat Protection in Microsoft Defender for SQL can raise alerts about potential SQL injection attacks.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Advanced Threat Protection monitors for suspicious activity and alerts on vulnerabilities, SQL injection attacks, and anomalous access."
+    }
+  },
+  {
+    "id": "f0f19e4d-0d18-5140-a3df-267346185e45",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-1",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "True or false? Azure SQL Database is fully compatible with on-premises SQL Server, so any on-premises application can move to it without changes.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Azure SQL Database isn't fully compatible with on-premises SQL Server; some features an app depends on might not be available. It suits new cloud apps or apps with minimal instance-level dependencies."
+    }
+  },
+  {
+    "id": "04b5c6a4-a07c-5698-8838-fcc200946c4a",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-2",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "A company wants to move an on-premises SQL Server instance, with several databases and some advanced instance-level features, to Azure with minimal application changes. It doesn't want to manage operating system patching or backups. Which option should it choose?",
+      "options": {
+        "A": "SQL Server on Azure Virtual Machines",
+        "B": "Azure SQL Managed Instance",
+        "C": "Azure SQL Database (single database)",
+        "D": "Azure SQL Database (elastic pool)"
+      },
+      "correct": "B",
+      "explanation": "Managed Instance is the choice for lifting and shifting a whole instance with advanced features and minimal changes, without the overhead of managing a VM. Not A: VMs would work, but you'd manage patching and backups. Not C/D: Azure SQL Database lacks some instance-level features."
+    }
+  },
+  {
+    "id": "51b0b923-6a43-50b1-9352-91707246feed",
+    "type": "mcq",
+    "domain": "relational-data",
+    "topic": "Explore relational database services in Azure",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "relational-data",
+      "explore-relational-database-services-in-azure",
+      "level-2",
+      "order:4",
+      "module:explore-provision-deploy-relational-database-offerings-azure",
+      "path:lp2",
+      "primary-path:lp2"
+    ],
+    "content": {
+      "question": "An organization's SQL Server application relies on operating system features that aren't supported at the PaaS level. It needs full administrative rights over both the operating system and the DBMS, and it already has IT staff to maintain servers. Which option fits?",
+      "options": {
+        "A": "SQL Server on Azure Virtual Machines",
+        "B": "Azure SQL Managed Instance",
+        "C": "Azure SQL Database Hyperscale",
+        "D": "Azure Database for PostgreSQL flexible server"
+      },
+      "correct": "A",
+      "explanation": "VMs give full administrative rights over the OS and DBMS and support OS features unavailable at the PaaS level, which suits organizations with existing IT staff. Not B/C: PaaS options abstract the OS. Not D: PostgreSQL is a different engine and is also PaaS."
+    }
+  },
+  {
+    "id": "9035ed68-ecfb-5b5b-a28f-3cfc113f8e57",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which blob type does Azure use to implement virtual disk storage for virtual machines?",
+      "options": {
+        "A": "Block blob",
+        "B": "Append blob",
+        "C": "Archive blob",
+        "D": "Page blob"
+      },
+      "correct": "D",
+      "explanation": "Page blobs are collections of 512-byte pages optimized for random read and write, and Azure uses them for VM virtual disks. Not A: block blobs suit large objects that change infrequently. Not B: append blobs only support adding to the end. Not C: Archive is an access tier, not a blob type."
+    }
+  },
+  {
+    "id": "292595ac-e435-527d-b480-baebd36020e8",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "An application writes log entries that are only ever added to the end of a file; existing entries are never changed. Which blob type is optimized for this?",
+      "options": {
+        "A": "Page blob",
+        "B": "Append blob",
+        "C": "Block blob",
+        "D": "Cool blob"
+      },
+      "correct": "B",
+      "explanation": "Append blobs support adding blocks to the end only; updating or deleting existing blocks isn't supported. Not A: page blobs are for random access. Not C: block blobs work but aren't optimized for append. Not D: Cool is an access tier, not a blob type."
+    }
+  },
+  {
+    "id": "ae4093a6-c49e-547c-80e4-3b065a6bccb7",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "What is the minimum time data should stay in the Cold access tier to avoid an early deletion penalty?",
+      "options": {
+        "A": "90 days",
+        "B": "30 days",
+        "C": "180 days",
+        "D": "60 days"
+      },
+      "correct": "A",
+      "explanation": "Cold requires 90 days. Not B: 30 days is Cool. Not C: 180 days is Archive. Not D: 60 days isn't a tier minimum."
+    }
+  },
+  {
+    "id": "72e7a6c5-2235-5988-bae6-d081acd7d5c6",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "How do you read a blob that is stored in the Archive tier?",
+      "options": {
+        "A": "Read it directly, allowing for up to 15 hours of latency",
+        "B": "Copy it to an Azure Files share, then read the copy",
+        "C": "Change its tier to Hot, Cool, or Cold, and wait for rehydration",
+        "D": "Enable the hierarchical namespace on the storage account"
+      },
+      "correct": "C",
+      "explanation": "Archive blobs are effectively offline. You change the tier to Hot, Cool, or Cold, the blob is rehydrated, and you can read it only after rehydration completes (which can take up to 15 hours). Not A: you can't read Archive blobs directly. Not B/D: neither applies."
+    }
+  },
+  {
+    "id": "a3b66520-a852-58ad-8a8e-fa1d36d2f440",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which redundancy option keeps three copies of your data within a single datacenter?",
+      "options": {
+        "A": "Zone-redundant storage (ZRS)",
+        "B": "Locally redundant storage (LRS)",
+        "C": "Geo-redundant storage (GRS)",
+        "D": "Read-access geo-zone-redundant storage (RA-GZRS)"
+      },
+      "correct": "B",
+      "explanation": "LRS keeps three copies in a single datacenter. Not A: ZRS spreads copies across three availability zones. Not C/D: GRS and RA-GZRS replicate to a secondary region."
+    }
+  },
+  {
+    "id": "3f6631cf-eb25-5ecf-bc21-a3f4c66abbb0",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "What must you enable on an Azure Storage account to create an Azure Data Lake Storage Gen2 file system?",
+      "options": {
+        "A": "The Archive access tier",
+        "B": "The NFS file-sharing protocol",
+        "C": "Read-access geo-redundant storage",
+        "D": "The hierarchical namespace setting"
+      },
+      "correct": "D",
+      "explanation": "ADLS Gen2 requires the hierarchical namespace setting. Not A/B/C: tiers, protocols, and redundancy options don't create a data lake file system."
+    }
+  },
+  {
+    "id": "4d513177-ba0f-5065-9868-cc23398ac9b2",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which statement about upgrading an existing storage account to use a hierarchical namespace is correct?",
+      "options": {
+        "A": "It's a one-way upgrade; you can't revert to a flat namespace",
+        "B": "You can switch between flat and hierarchical at any time",
+        "C": "Existing accounts can't be upgraded; you must create a new one",
+        "D": "Only SSD-based premium accounts can be upgraded"
+      },
+      "correct": "A",
+      "explanation": "You can enable the hierarchical namespace at creation or upgrade an existing account, but upgrading is one-way. Not B: no reverting. Not C: existing accounts can be upgraded. Not D: no such restriction is described."
+    }
+  },
+  {
+    "id": "1148035a-2836-5aa5-9ca4-931a215983ba",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which Azure Files protocol is used by Linux clients and is NOT supported on Windows?",
+      "options": {
+        "A": "Server Message Block (SMB)",
+        "B": "REST over HTTPS",
+        "C": "Network File System (NFS)",
+        "D": "AzCopy transfer protocol"
+      },
+      "correct": "C",
+      "explanation": "NFS shares are used by Linux clients and aren't supported on Windows. Not A: SMB works across Windows, Linux, and macOS. Not B/D: these aren't the two file-sharing protocols the module describes."
+    }
+  },
+  {
+    "id": "63035f7f-89b5-5614-9002-dab2f1670cf3",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "In Azure Table Storage, what makes up the unique key for each row?",
+      "options": {
+        "A": "A partition key and a row key",
+        "B": "A row key and a timestamp",
+        "C": "A partition key and a timestamp",
+        "D": "A primary key and a foreign key"
+      },
+      "correct": "A",
+      "explanation": "Each row's unique key combines a partition key and a row key. Not B/C: the timestamp records when a row was modified; it isn't part of the key. Not D: Table Storage has no foreign keys."
+    }
+  },
+  {
+    "id": "cc737aee-1d5d-56d5-b61f-b4a36256a615",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "In which formats does Microsoft OneLake store tables?",
+      "options": {
+        "A": "CSV or JSON",
+        "B": "Avro or ORC",
+        "C": "XML or Parquet",
+        "D": "Delta Parquet or Iceberg"
+      },
+      "correct": "D",
+      "explanation": "OneLake stores tables in Delta Parquet or Iceberg, both open formats. Not A/B/C: none of these pairs is what OneLake uses for tables (OneLake can hold any file type, but tables use these formats)."
+    }
+  },
+  {
+    "id": "5e9cb6bb-6ff1-5507-8049-75194b21b170",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? By default, the virtual folders inside a blob container let you set access permissions at the folder level.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "By default, folders are only a \"/\" in the blob name. They're purely virtual, so you can't control access or run bulk operations at folder level. The hierarchical namespace (ADLS Gen2) is what adds real folders."
+    }
+  },
+  {
+    "id": "2e83d918-9566-5412-9d5f-2ba5f33edebf",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? With a hierarchical namespace enabled, you can use POSIX-compliant access control lists (ACLs) to set permissions on individual files and folders, separate from Azure RBAC.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "The hierarchical namespace enables POSIX-compliant ACLs for fine-grained read, write, and execute permissions, separate from RBAC."
+    }
+  },
+  {
+    "id": "9d90daff-5f22-5a66-9fa2-f80171449bc3",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Microsoft recommends shared access keys as the preferred way to authenticate to Azure Blob Storage.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Microsoft Entra ID authentication is the recommended sign-in method, with permissions assigned through Azure RBAC."
+    }
+  },
+  {
+    "id": "4dc8183b-05c5-5413-abce-94b1eaaf0341",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Data in Azure Table Storage is usually denormalized, with each row holding all the data for a logical entity.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Table Storage rows are usually denormalized; for example, one customer row can hold multiple phone numbers and addresses."
+    }
+  },
+  {
+    "id": "4c87f235-b370-5f2f-bc18-089e02715ea6",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Azure File Sync can synchronize locally cached copies of shared files with the data in Azure Files.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Azure File Sync synchronizes locally cached copies of shared files with Azure Files."
+    }
+  },
+  {
+    "id": "de861806-27af-59ce-83dc-e34e66e568b5",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-1",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? You can create an NFS share in Azure Files on either the HDD tier or the SSD tier.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "NFS shares require the SSD tier, with access controlled through a private endpoint or service endpoint in a virtual network."
+    }
+  },
+  {
+    "id": "cad8ee4f-7e75-536e-8e36-8994881044fc",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-2",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "A company stores invoice PDFs as blobs. Invoices are opened often in their first month, rarely after that, and after a year they must be kept for several more years but are almost never read. The company wants storage costs to drop automatically as invoices age. What should it do?",
+      "options": {
+        "A": "Upload every invoice directly to the Archive tier to keep costs lowest from day one",
+        "B": "Upload to the Hot tier and have an administrator move blobs to cheaper tiers each year",
+        "C": "Upload to Hot and add a lifecycle policy that moves blobs to Cool, Cold, then Archive",
+        "D": "Store the invoices in Azure Files on the HDD tier and set a quota on each share"
+      },
+      "correct": "C",
+      "explanation": "A lifecycle management policy moves blobs from Hot to Cool to Cold to Archive based on days since modification, so costs drop automatically. Not A: first-month reads from Archive would take hours and cost more to access. Not B: manual moves aren't automatic. Not D: Azure Files doesn't offer access-tier lifecycle movement."
+    }
+  },
+  {
+    "id": "2be1c957-11dc-58d5-881c-e7e98c3513f3",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore Azure Storage for non-relational data",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-azure-storage-for-non-relational-data",
+      "level-2",
+      "order:5",
+      "module:explore-provision-deploy-non-relational-data-services-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "A company's staff use a mapped network drive on an on-premises Windows file server. It wants to move these shares to the cloud so Windows, Linux, and macOS users can all connect, while a branch office keeps fast local cached copies. What should it use?",
+      "options": {
+        "A": "Blob storage with a hierarchical namespace and Azure RBAC permissions",
+        "B": "An Azure Files SMB share, with Azure File Sync at the branch office",
+        "C": "An Azure Files NFS share on the SSD tier with a private endpoint",
+        "D": "Azure Table Storage with a separate partition for each office"
+      },
+      "correct": "B",
+      "explanation": "Azure Files provides cloud network shares; SMB works across Windows, Linux, and macOS, and Azure File Sync keeps local cached copies in sync. Not A: blob storage isn't a mapped network drive. Not C: NFS isn't supported on Windows. Not D: Table Storage holds key-value data, not files."
+    }
+  },
+  {
+    "id": "2e4b1419-a63c-567c-b348-592688877701",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "In the Azure Cosmos DB resource hierarchy, at which level do you configure the partition key, throughput, indexing policy, and optional time-to-live (TTL)?",
+      "options": {
+        "A": "Account",
+        "B": "Container",
+        "C": "Database",
+        "D": "Item"
+      },
+      "correct": "B",
+      "explanation": "The container is the primary unit of storage and scaling, where you set the partition key, throughput, indexing policy, and TTL. Not A: the account is the top-level Azure resource. Not C: a database is a logical namespace grouping containers (shared throughput can be set there, but not the partition key or indexing policy). Not D: items are the data itself."
+    }
+  },
+  {
+    "id": "647872b2-82a2-56b7-b80e-3f98e0c48004",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which Cosmos DB consistency level is the most widely used for both single-region and globally distributed applications?",
+      "options": {
+        "A": "Session",
+        "B": "Strong",
+        "C": "Bounded staleness",
+        "D": "Eventual"
+      },
+      "correct": "A",
+      "explanation": "Session is the most widely used level; consistency is guaranteed within a single client session. Not B: Strong is the strictest. Not C/D: not described as most widely used."
+    }
+  },
+  {
+    "id": "1fa49ee4-6730-5fa7-b4e2-91fb034937b0",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which consistency level guarantees that reads never see writes out of order, but may return stale data?",
+      "options": {
+        "A": "Session",
+        "B": "Eventual",
+        "C": "Consistent prefix",
+        "D": "Bounded staleness"
+      },
+      "correct": "C",
+      "explanation": "Consistent prefix: reads never see out-of-order writes, but data may be stale. Not A: Session guarantees consistency within a client session. Not B: Eventual only promises that replicas converge over time. Not D: Bounded staleness lets reads lag by a configurable time or version count."
+    }
+  },
+  {
+    "id": "567383b1-2305-5835-9c3f-c75623798a09",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "One request unit (RU) is roughly the cost of which operation?",
+      "options": {
+        "A": "Writing a 1-KB item and indexing all of its properties",
+        "B": "Running a query that scans across every partition",
+        "C": "Storing 1 GB of data in a container for one hour",
+        "D": "Reading a single 1-KB item by its ID and partition key"
+      },
+      "correct": "D",
+      "explanation": "One RU is roughly the cost of reading a single 1-KB item by its ID and partition key. Not A/B: writes and cross-partition queries usually consume more RUs. Not C: storage isn't measured in RUs."
+    }
+  },
+  {
+    "id": "b3285897-6ed8-5f73-b22b-fa7fab657a58",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "How much data can a single logical partition in Cosmos DB hold?",
+      "options": {
+        "A": "Up to 20 GB",
+        "B": "Up to 10 GB",
+        "C": "Up to 50 GB",
+        "D": "Up to 100 GB"
+      },
+      "correct": "A",
+      "explanation": "Each logical partition can hold up to 20 GB, which is why a partition key with many distinct, evenly spread values matters."
+    }
+  },
+  {
+    "id": "ce248a91-9d33-5af6-8b83-301e0f98cef3",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which API is the native Cosmos DB API and was previously called the SQL API?",
+      "options": {
+        "A": "Table",
+        "B": "NoSQL",
+        "C": "MongoDB",
+        "D": "Apache Cassandra"
+      },
+      "correct": "B",
+      "explanation": "Cosmos DB for NoSQL is the native API (formerly the SQL API); it stores JSON and uses SQL-like queries. Not A/C/D: these are compatibility APIs for Table Storage, MongoDB, and Cassandra workloads."
+    }
+  },
+  {
+    "id": "bcfae495-d425-5508-b1ee-0ee459c2d14e",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which query language does Azure Cosmos DB for Apache Cassandra use?",
+      "options": {
+        "A": "MongoDB Query Language (MQL)",
+        "B": "Kusto Query Language (KQL)",
+        "C": "Gremlin",
+        "D": "Cassandra Query Language (CQL)"
+      },
+      "correct": "D",
+      "explanation": "Cassandra uses CQL, which has SQL-like syntax. Not A: MQL is for the MongoDB API. Not B: KQL is for Azure Data Explorer and Fabric Eventhouse. Not C: Gremlin is for graph data."
+    }
+  },
+  {
+    "id": "92baf0b6-c16c-53cf-9787-e8dd67f91e06",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "Which of the following is NOT one of the five Cosmos DB APIs presented in this module?",
+      "options": {
+        "A": "Table",
+        "B": "Apache Gremlin",
+        "C": "PostgreSQL",
+        "D": "MongoDB"
+      },
+      "correct": "C",
+      "explanation": "The five APIs are NoSQL, MongoDB, Table, Apache Cassandra, and Apache Gremlin. Azure Cosmos DB for PostgreSQL is a separate offering on a retirement path and isn't recommended for new projects."
+    }
+  },
+  {
+    "id": "8cf9d7fb-c967-50f6-881e-43f0065bd9b6",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Items stored in the same Cosmos DB container don't need to share the same structure.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Cosmos DB is schema-agnostic; one item can have five properties and another in the same container 15 different ones."
+    }
+  },
+  {
+    "id": "e168bcd9-ae12-583d-8869-31e447297502",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? In Cosmos DB, you must manually define an index on each property you plan to query.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Cosmos DB automatically creates and maintains indexes on all item properties by default."
+    }
+  },
+  {
+    "id": "0b534207-d99e-5fc6-a571-9bc0cb03e630",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Serverless Cosmos DB accounts are limited to a single Azure region.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Serverless accounts are single-region; global distribution requires a provisioned throughput account."
+    }
+  },
+  {
+    "id": "150b8515-f51c-5d43-916f-3294adb9bb62",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Shared throughput is set at the database level and can be shared across an unlimited number of containers.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Shared database-level throughput can be shared across up to 25 containers."
+    }
+  },
+  {
+    "id": "235848e3-c6fd-5bcc-a01e-66a26b56a714",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Cosmos DB is the best fit for workloads that depend on complex multi-table joins.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "The module says that if your app depends on complex multi-table joins, Azure SQL Database is better suited."
+    }
+  },
+  {
+    "id": "c5b9ac9e-7cb0-57fd-bb86-38610a3461fa",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-1",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "True or false? Cosmos DB for NoSQL supports Fabric mirroring, which replicates operational data into Microsoft Fabric without consuming request units from the transactional workload.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Fabric mirroring replicates NoSQL API data into Fabric with no ETL pipeline, without consuming RUs or affecting the transactional workload."
+    }
+  },
+  {
+    "id": "5c7e129e-0b02-56ca-b7e5-24b795e928bc",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-2",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "A social networking app stores users, posts, and friendships. Its key feature is recommending \"friends of friends,\" which means traversing relationships between people. Which Cosmos DB API fits best?",
+      "options": {
+        "A": "Apache Gremlin",
+        "B": "Apache Cassandra",
+        "C": "Table",
+        "D": "MongoDB"
+      },
+      "correct": "A",
+      "explanation": "Gremlin is for graph data (vertices and edges), suited to social networks and recommendation engines where relationships matter as much as the data. Not B: Cassandra is a column-family model. Not C: Table is key-value. Not D: MongoDB is a document model."
+    }
+  },
+  {
+    "id": "02400df3-e869-59ee-9ec8-593993215f50",
+    "type": "mcq",
+    "domain": "non-relational-data",
+    "topic": "Explore fundamentals of Azure Cosmos DB",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "non-relational-data",
+      "explore-fundamentals-of-azure-cosmos-db",
+      "level-2",
+      "order:6",
+      "module:explore-non-relational-data-stores-azure",
+      "path:lp3",
+      "primary-path:lp3"
+    ],
+    "content": {
+      "question": "A gaming company has players on three continents. Each player must read and write to the nearest region with low latency, and the company needs a 99.999% availability SLA. Traffic is hard to predict, but the company wants to cap its maximum throughput. Which configuration fits?",
+      "options": {
+        "A": "A serverless account replicated to three regions",
+        "B": "Provisioned autoscale throughput with multi-region writes in three regions",
+        "C": "A serverless account in one region with Strong consistency",
+        "D": "Shared throughput across 30 containers in a single region"
+      },
+      "correct": "B",
+      "explanation": "Multi-region writes give each region low-latency writes and the 99.999% SLA; autoscale lets you set a maximum RU/s and adjusts within it. Not A/C: serverless accounts are limited to one region. Not D: a single region can't serve three continents with low latency, and shared throughput allows up to 25 containers."
+    }
+  },
+  {
+    "id": "39c3373a-0b3a-5944-b2bf-5d9601d8ea78",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "What is the difference between an ETL process and an ELT process?",
+      "options": {
+        "A": "ETL transforms data before loading it; ELT copies data to the store, then transforms it",
+        "B": "ETL is used for streaming data, while ELT is used for batch data",
+        "C": "ETL can load only into data lakes, while ELT can load only into data warehouses",
+        "D": "ETL is supported by Microsoft Fabric, while ELT is supported only by Azure Databricks"
+      },
+      "correct": "A",
+      "explanation": "In ETL, data is transformed before loading into the analytical store; in ELT, it's copied to the store and then transformed. Not B: both describe loading; ingestion covers both batch and streaming. Not C/D: neither is limited to one store type or platform."
+    }
+  },
+  {
+    "id": "8fcc85f9-5332-510a-81e6-f8ce2850ac6c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A data warehouse has a central fact table related to several dimension tables, and the Product dimension is further related to a Category table. What is this design called?",
+      "options": {
+        "A": "Star schema",
+        "B": "Normalized OLTP schema",
+        "C": "Snowflake schema",
+        "D": "Medallion schema"
+      },
+      "correct": "C",
+      "explanation": "Adding tables related to dimension tables (such as Product → Category) to represent hierarchies extends a star schema into a snowflake schema. Not A: a star schema has dimensions related only to the fact table. Not B: OLTP schemas aren't fact/dimension designs. Not D: medallion is a lakehouse layering pattern (Bronze/Silver/Gold)."
+    }
+  },
+  {
+    "id": "72303445-efbf-5e3c-bd9c-a55ac95462ec",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which approach do data lakes commonly use to apply structure to semi-structured files?",
+      "options": {
+        "A": "Schema-on-write, with constraints applied when data is stored",
+        "B": "A fixed relational schema enforced during every load",
+        "C": "A normalized schema with foreign key relationships",
+        "D": "Schema-on-read, defined when the data is read for analysis"
+      },
+      "correct": "D",
+      "explanation": "Data lakes often use schema-on-read: tabular schemas are defined when data is read, with no constraints applied when it's stored. Not A/B/C: these describe enforcing structure at write time, which is how data warehouses work."
+    }
+  },
+  {
+    "id": "57ab52f5-12b4-5548-8bea-0a06660360ab",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which Microsoft Fabric feature makes data in external storage, such as Amazon S3, appear in a lakehouse without copying it?",
+      "options": {
+        "A": "Mirroring",
+        "B": "OneLake shortcut",
+        "C": "Dataflows Gen2",
+        "D": "Eventstream"
+      },
+      "correct": "B",
+      "explanation": "A shortcut is a live reference to external storage (ADLS Gen2, Amazon S3, Google Cloud Storage, or OneLake) that makes data appear in your lakehouse with no movement or duplication. Not A: Mirroring replicates data into OneLake. Not C: Dataflows Gen2 transforms data. Not D: Eventstream ingests streaming events."
+    }
+  },
+  {
+    "id": "a4a0cf2e-bf26-5ae1-af71-59204021510a",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which Fabric feature continuously replicates an external database, such as Azure SQL Database or Snowflake, into OneLake in near-real-time without you authoring a pipeline?",
+      "options": {
+        "A": "OneLake shortcut",
+        "B": "A pipeline Copy activity",
+        "C": "A Fabric notebook",
+        "D": "Mirroring"
+      },
+      "correct": "D",
+      "explanation": "Mirroring continuously replicates an external database into OneLake in near-real-time, handling change tracking automatically. Not A: a shortcut references storage rather than replicating a database. Not B/C: these would require you to author the ingestion."
+    }
+  },
+  {
+    "id": "c7bc1a9d-8631-58e9-9136-cca549f1428a",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which Fabric Data Factory tool provides a low-code, visual experience for building reusable transformation logic with Power Query?",
+      "options": {
+        "A": "Pipelines",
+        "B": "Notebooks",
+        "C": "Dataflows Gen2",
+        "D": "Lakeflow pipelines"
+      },
+      "correct": "C",
+      "explanation": "Dataflows Gen2 is the low-code, visual Power Query tool. Not A: pipelines orchestrate multi-step workflows. Not B: notebooks are code-first. Not D: Lakeflow pipelines are an Azure Databricks feature."
+    }
+  },
+  {
+    "id": "3ba5808b-24fa-5fcf-8f69-879edbdf3f8c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "In Azure Databricks, which option lets you declare what output tables should contain, while Databricks handles execution order, dependency tracking, and incremental processing?",
+      "options": {
+        "A": "Lakeflow pipelines",
+        "B": "Unity Catalog",
+        "C": "Databricks SQL warehouse",
+        "D": "Genie"
+      },
+      "correct": "A",
+      "explanation": "Lakeflow pipelines are declarative: you define the outputs, Databricks handles the rest. Not B: Unity Catalog is governance. Not C: a SQL warehouse runs analytical queries. Not D: Genie answers natural language questions."
+    }
+  },
+  {
+    "id": "2c75542c-7124-564b-b13b-1cfa4d58da6c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which semantic model storage mode in Microsoft Fabric loads data directly from Delta tables in OneLake, without importing a separate copy into the model?",
+      "options": {
+        "A": "Import mode",
+        "B": "Mirroring mode",
+        "C": "Shortcut mode",
+        "D": "Direct Lake"
+      },
+      "correct": "D",
+      "explanation": "Direct Lake loads data from Delta tables in OneLake without importing a separate copy. Not A: Import mode copies data into the model. Not B/C: Mirroring and shortcuts are ingestion features, not semantic model modes."
+    }
+  },
+  {
+    "id": "82312756-8303-5884-b969-df4eec12472d",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Like traditional cubes, modern semantic models pre-aggregate all numeric values in advance rather than computing aggregations at query time.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Historically, cubes pre-aggregated data. Today's semantic models define measures in DAX and compute aggregations at query time."
+    }
+  },
+  {
+    "id": "81581437-a122-5834-91c9-ae8cf6f05998",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? When you create a Fabric Lakehouse, a SQL analytics endpoint is created for it automatically.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "A SQL analytics endpoint is created automatically with every Fabric Lakehouse."
+    }
+  },
+  {
+    "id": "bbb53ae3-5dff-5d6d-87a7-cece2eca3d61",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? A Fabric Warehouse stores its data outside OneLake, which is how it provides strong schema enforcement.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Fabric Warehouse data lives in OneLake too, giving the Lakehouse and Warehouse a unified storage foundation."
+    }
+  },
+  {
+    "id": "bd31b609-8943-5b68-94da-2897f41b2a66",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Unity Catalog provides governance for Azure Databricks, including fine-grained access control, data lineage, and discovery.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Unity Catalog is Azure Databricks' unified governance layer for access control, lineage, and discovery."
+    }
+  },
+  {
+    "id": "e024232d-ecad-5294-aaf4-0d6521b963eb",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Azure Data Factory uses linked services in the same way that Fabric Data Factory uses connections.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Azure Data Factory's pipeline model uses linked services in place of Fabric connections, so skills transfer between the two."
+    }
+  },
+  {
+    "id": "ea0db061-60f2-595f-ab68-9704a9bea932",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-1",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Genie in Azure Databricks is a low-code designer for building ETL pipelines.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Genie is an AI-powered conversational interface: users ask natural language questions, and Genie generates and runs SQL."
+    }
+  },
+  {
+    "id": "e32ffee4-0ce4-5c4d-bec4-4de4765efe7f",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-2",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A team using Microsoft Fabric has highly structured sales data. Everyone on the team writes SQL, and the solution needs strong schema enforcement and support for many simultaneous users. Which analytical store should they choose?",
+      "options": {
+        "A": "A Fabric Lakehouse queried mainly through Spark notebooks",
+        "B": "An Eventhouse with KQL databases",
+        "C": "A Fabric Warehouse queried with T-SQL",
+        "D": "A OneLake shortcut to an ADLS Gen2 account"
+      },
+      "correct": "C",
+      "explanation": "Fabric Warehouse is the right choice for structured data, SQL-writing teams, strong schema enforcement, and high concurrency. Not A: a Lakehouse suits mixed or semi-structured data and ML work. Not B: Eventhouse is for time-series and event data. Not D: a shortcut isn't an analytical store."
+    }
+  },
+  {
+    "id": "39b54386-67fc-503f-ad44-d019e210d9b5",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of large-scale data analytics",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-large-scale-data-analytics",
+      "level-2",
+      "order:7",
+      "module:examine-components-of-modern-data-warehouse",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Compliance rules require a dataset to stay in its existing ADLS Gen2 account, with no copies, but analysts want to query it from a Fabric Lakehouse. Separately, the team must load data nightly from an on-premises SQL Server into Azure SQL Database, outside of Fabric. Which combination fits?",
+      "options": {
+        "A": "Mirroring for the ADLS Gen2 data; Fabric notebooks for the nightly load",
+        "B": "A OneLake shortcut for the ADLS Gen2 data; Azure Data Factory for the nightly load",
+        "C": "Dataflows Gen2 for the ADLS Gen2 data; Eventstream for the nightly load",
+        "D": "A OneLake shortcut for the ADLS Gen2 data; Fabric Mirroring for the nightly load"
+      },
+      "correct": "B",
+      "explanation": "A shortcut lets Fabric query data that stays in place, which meets the no-copy rule. Azure Data Factory is the standalone service for pipelines outside Fabric, including on-premises sources and Azure SQL Database destinations. Not A: Mirroring would copy data into OneLake. Not C: Eventstream is for streaming events. Not D: Mirroring replicates into OneLake, not into Azure SQL Database."
+    }
+  },
+  {
+    "id": "11eb40d7-061c-5f31-a7c1-9541600a6f2b",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which of these is the module's real-world example of batch processing?",
+      "options": {
+        "A": "A building monitor that triggers fire alarms and unlocks doors",
+        "B": "A credit card company sending one bill for a month of purchases",
+        "C": "A bank rebalancing portfolios as stock prices move",
+        "D": "A real-estate site recommending homes based on a phone's location"
+      },
+      "correct": "B",
+      "explanation": "Monthly credit card billing collects purchases and processes them together, which is batch. Not A: fire monitoring is the module's time-critical streaming example. Not C/D: stock rebalancing and geo-based recommendations are its streaming examples."
+    }
+  },
+  {
+    "id": "980f3d2b-4c27-54f5-b7d9-a13ff8cbfafd",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "What is the typical latency of stream processing?",
+      "options": {
+        "A": "A few hours",
+        "B": "Several minutes to an hour",
+        "C": "Overnight, during off-peak periods",
+        "D": "Seconds or milliseconds"
+      },
+      "correct": "D",
+      "explanation": "Stream processing latency is typically seconds or milliseconds. Not A: a few hours is typical for batch. Not B/C: these describe batch-style delays."
+    }
+  },
+  {
+    "id": "070bceab-ebd2-5d6b-901d-cbc53512fb23",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "In a stream processing architecture, what is the continuously running query that selects, projects, or aggregates event data over time windows called?",
+      "options": {
+        "A": "A perpetual query",
+        "B": "A sink",
+        "C": "A batch job",
+        "D": "A micro batch"
+      },
+      "correct": "A",
+      "explanation": "A perpetual query runs continuously on event data, often aggregating over temporal windows such as per minute. Not B: the sink is the output. Not C: batch jobs process stored groups of data. Not D: a micro batch is a small group of records, not the query."
+    }
+  },
+  {
+    "id": "dcf35543-3ba6-57b1-9c8f-35433db6692e",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which component of Microsoft Fabric Real-Time Intelligence triggers automated actions when streaming data meets defined conditions?",
+      "options": {
+        "A": "Eventstream",
+        "B": "Eventhouse",
+        "C": "Activator",
+        "D": "Real-time hub"
+      },
+      "correct": "C",
+      "explanation": "Activator triggers automated actions when conditions are met. Not A: Eventstream ingests, routes, and transforms streaming data. Not B: Eventhouse stores and queries time-series and event data. Not D: the real-time hub is the catalog of streaming data."
+    }
+  },
+  {
+    "id": "b12bbfa0-33fd-505a-b8fc-90ab6cb9592f",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which ingestion service is similar to Azure Event Hubs but optimized for managing event data from Internet-of-things devices?",
+      "options": {
+        "A": "Azure IoT Hub",
+        "B": "Azure Event Hubs Premium",
+        "C": "Apache Kafka",
+        "D": "Azure Data Lake Storage Gen2"
+      },
+      "correct": "A",
+      "explanation": "IoT Hub is similar to Event Hubs but optimized for IoT device data. Not B: not described in the module. Not C: Kafka is an open-source ingestion option commonly used with Spark. Not D: ADLS Gen2 is storage, mostly for batch."
+    }
+  },
+  {
+    "id": "f6c13cad-f54e-5bf7-9e40-6e0013dbc26c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which language do you use to query data in a Fabric Eventhouse?",
+      "options": {
+        "A": "Transact-SQL (T-SQL)",
+        "B": "Data Analysis Expressions (DAX)",
+        "C": "Cassandra Query Language (CQL)",
+        "D": "Kusto Query Language (KQL)"
+      },
+      "correct": "D",
+      "explanation": "Eventhouse is queried with KQL (Kusto Query Language). Not A: T-SQL is for Fabric Warehouse and Azure SQL. Not B: DAX is for semantic model measures. Not C: CQL is for Cassandra."
+    }
+  },
+  {
+    "id": "26238311-af45-5ca4-88af-7e238cd5daae",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which architecture removes the separate batch layer, treating all data as a continuous stream and replaying it when historical reprocessing is needed?",
+      "options": {
+        "A": "Lambda architecture",
+        "B": "Kappa architecture",
+        "C": "Delta architecture",
+        "D": "Medallion architecture"
+      },
+      "correct": "B",
+      "explanation": "Kappa eliminates the separate batch layer. Not A: the lambda architecture combines batch and stream layers. Not C: delta is another combined architecture. Not D: medallion is a lakehouse data-quality layering pattern."
+    }
+  },
+  {
+    "id": "1755f0e7-a394-55b2-bb6b-304ea37447be",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which part of Fabric Real-Time Intelligence acts as a centralized catalog for discovering and sharing streaming data across an organization?",
+      "options": {
+        "A": "Real-time hub",
+        "B": "Eventstream",
+        "C": "OneLake file explorer",
+        "D": "Microsoft Purview"
+      },
+      "correct": "A",
+      "explanation": "The real-time hub catalogs streaming data sources so teams can discover and share them. Not B: Eventstream processes streams. Not C: OneLake file explorer browses OneLake files from Windows. Not D: Purview is enterprise governance, not the Real-Time Intelligence catalog."
+    }
+  },
+  {
+    "id": "6faa3203-abf0-5caf-8bc2-0331ec070d6f",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Azure Event Hubs delivers events in order within a partition and guarantees at-least-once delivery.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Events within a partition are delivered in order, with at-least-once delivery."
+    }
+  },
+  {
+    "id": "f20b2d22-0044-5f8a-abdd-3646c7a65829",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Stream processing is typically used for complex analytics across an entire dataset, while batch processing is used for simple rolling averages.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "It's reversed. Batch processing suits complex analytics over full datasets; stream processing suits simple responses, aggregates, and rolling averages over recent data or time windows."
+    }
+  },
+  {
+    "id": "a4ed8cdd-1714-5285-8dd2-020ee9aa0f58",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Azure Stream Analytics is available only inside Microsoft Fabric.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Azure Stream Analytics is a PaaS service you can use for standalone or hybrid streaming outside Fabric."
+    }
+  },
+  {
+    "id": "1288db89-4421-5a13-b0c7-a7cb4edb751c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? The same Delta table can be used as a streaming sink and as a source for batch queries.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Delta Lake unifies batch and streaming: one table can be a streaming sink and a batch source."
+    }
+  },
+  {
+    "id": "2bd168a0-a99d-52a0-a318-57e5eeed46d6",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Azure Data Lake Storage Gen2 is used only in batch processing and can't act as a source of streaming data.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "ADLS Gen2 is often used in batch scenarios but can also be a source of streaming data."
+    }
+  },
+  {
+    "id": "7906c182-e235-5a4b-8452-21d8980922df",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-1",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Even when real-time analysis isn't required, streaming technologies are often used to capture real-time data and store it for later batch processing.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Streaming tech often captures data for later batch processing — like directing all the cars into a parking lot before counting them."
+    }
+  },
+  {
+    "id": "848b3250-fb00-5fe1-b15e-4631deb75cb3",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-2",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A factory's sensors send a temperature reading every second. Within Microsoft Fabric, the operations team wants a live dashboard of the average temperature per minute, an automatic alert when a reading crosses a threshold, and storage they can query later. Which design fits?",
+      "options": {
+        "A": "An hourly Fabric Data Factory pipeline into a Warehouse, with a Power BI report on top",
+        "B": "Azure Data Explorer for queries, with Microsoft Purview to raise threshold alerts",
+        "C": "A nightly Spark notebook job that writes readings to a Lakehouse Delta table",
+        "D": "An Eventstream into an Eventhouse, with a Real-Time Dashboard and Activator alerts"
+      },
+      "correct": "D",
+      "explanation": "Eventstream ingests the sensor data, Eventhouse stores it for querying, a Real-Time Dashboard shows live per-minute averages, and Activator raises alerts on thresholds, all within Fabric. Not A/C: hourly or nightly batches aren't real-time. Not B: Purview handles governance, not alerting, and Data Explorer is outside Fabric."
+    }
+  },
+  {
+    "id": "6ab1fd56-87f0-5a66-bafd-e81408fef8db",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of real-time analytics",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-real-time-analytics",
+      "level-2",
+      "order:8",
+      "module:explore-fundamentals-stream-processing",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A data engineering team already uses Apache Spark in Azure Databricks for batch processing. It now wants to process events from Azure Event Hubs in real time, and keep a single data store that serves both live ingestion and historical analysis. What should it use?",
+      "options": {
+        "A": "An Azure Stream Analytics job that writes results to Azure SQL Database",
+        "B": "Fabric Real-Time Dashboards built over an Eventhouse KQL database",
+        "C": "Spark Structured Streaming that writes results to Delta Lake tables",
+        "D": "A nightly Azure Data Factory job that copies Event Hubs data to Blob storage"
+      },
+      "correct": "C",
+      "explanation": "Spark Structured Streaming suits teams already using Spark, and writing to Delta Lake gives one store for real-time ingestion and historical analysis. Not A: Stream Analytics works, but doesn't extend existing Spark work and splits storage from the data lake. Not B: that's a Fabric solution, not an extension of Databricks Spark. Not D: nightly copies aren't real-time."
+    }
+  },
+  {
+    "id": "673eb247-05c0-59e8-8cfa-aa827722b1d8",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A typical Power BI workflow starts with which tool, used to import data, build a data model, and create reports?",
+      "options": {
+        "A": "The Power BI service",
+        "B": "The Power BI phone app",
+        "C": "Power BI Desktop",
+        "D": "A Fabric Real-Time Dashboard"
+      },
+      "correct": "C",
+      "explanation": "The typical workflow starts in Power BI Desktop (a Windows app), then publishes to the Power BI service. Not A: the service offers only limited modeling and is where reports are published and shared. Not B: the phone app is for consuming reports. Not D: Real-Time Dashboards are part of Fabric Real-Time Intelligence."
+    }
+  },
+  {
+    "id": "fabe35c0-b045-5afe-b026-89cd9bbb4efd",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which visualization is best for comparing two numeric measures, such as marketing spend and revenue, to find a correlation?",
+      "options": {
+        "A": "Scatter plot",
+        "B": "Pie chart",
+        "C": "Line chart",
+        "D": "Map"
+      },
+      "correct": "A",
+      "explanation": "Scatter plots compare two numeric measures to find a relationship or correlation. Not B: pie charts show proportions of a total. Not C: line charts show trends, often over time. Not D: maps compare values by geography."
+    }
+  },
+  {
+    "id": "163b636f-1293-5518-8c2c-6ae9801f30d8",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "In a semantic model, what are the numeric values you analyze called, and what are the entities you aggregate them by called?",
+      "options": {
+        "A": "Dimensions; measures",
+        "B": "Facts; hierarchies",
+        "C": "Attributes; keys",
+        "D": "Measures; dimensions"
+      },
+      "correct": "D",
+      "explanation": "Measures are the numeric values you analyze (such as revenue); dimensions are the entities you aggregate by (such as product, customer, and time). Not A: this swaps them — the common trap. Not B/C: facts are tables that hold measures; hierarchies, attributes, and keys are other model elements."
+    }
+  },
+  {
+    "id": "1b11a2d6-57d8-5257-897c-cdca55f03362",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "When you import data into a semantic model, which engine stores it in an in-memory columnar store?",
+      "options": {
+        "A": "Direct Lake",
+        "B": "VertiPaq",
+        "C": "Delta Lake",
+        "D": "Kusto"
+      },
+      "correct": "B",
+      "explanation": "In Import mode, Power BI stores data in an in-memory columnar store using the VertiPaq engine. Not A: Direct Lake loads from OneLake Delta tables without importing. Not C: Delta Lake is a storage format. Not D: Kusto relates to KQL and Eventhouse."
+    }
+  },
+  {
+    "id": "98f8a335-8fa9-54ad-b614-4befc984d202",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Which AI-powered Power BI visual identifies the factors that most strongly drive a selected metric?",
+      "options": {
+        "A": "Decomposition tree",
+        "B": "Key influencers",
+        "C": "Smart narrative",
+        "D": "Q&A visual"
+      },
+      "correct": "B",
+      "explanation": "Key influencers identifies which factors most strongly drive a selected metric. Not A: the decomposition tree lets you drill down across dimensions to see what contributes to a value — close, but different. Not C: smart narratives write text summaries. Not D: Q&A is being retired in favor of Copilot."
+    }
+  },
+  {
+    "id": "70cc9e51-abce-57dc-8113-9c7a0c8c9802",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "Copilot is the recommended replacement for which Power BI feature?",
+      "options": {
+        "A": "Smart narratives",
+        "B": "Key influencers",
+        "C": "Decomposition tree",
+        "D": "The Q&A visual"
+      },
+      "correct": "D",
+      "explanation": "Copilot is the recommended replacement for the Q&A visual, which is being retired in February 2027. Not A/B/C: these AI features remain available."
+    }
+  },
+  {
+    "id": "8d07ec82-b7a4-57d2-a4d9-41376dfb8a85",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "In Direct Lake mode, what is the lightweight refresh operation that updates a semantic model to reference the latest data called?",
+      "options": {
+        "A": "Mirroring",
+        "B": "Rehydration",
+        "C": "Framing",
+        "D": "Shortcutting"
+      },
+      "correct": "C",
+      "explanation": "Framing is the lightweight refresh that points a Direct Lake model at the latest data. Not A: Mirroring replicates external databases into OneLake. Not B: rehydration is reading back archived blobs. Not D: shortcuts reference external storage."
+    }
+  },
+  {
+    "id": "71aff9fe-a06f-52cd-9feb-308492a87c77",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "In Power BI Desktop, where do you create relationships between fact and dimension tables and define hierarchies?",
+      "options": {
+        "A": "Model view",
+        "B": "Report view",
+        "C": "A Power BI service dashboard",
+        "D": "The Fabric real-time hub"
+      },
+      "correct": "A",
+      "explanation": "Model view in Power BI Desktop is where you create relationships, define hierarchies, and set data types and formats. Not B: Report view is for building visualizations. Not C/D: these aren't modeling surfaces."
+    }
+  },
+  {
+    "id": "e3a78254-457e-5747-a42a-bc298c3a83be",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? The Power BI service provides the same full data modeling functionality in a web browser as Power BI Desktop.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "You can do some basic modeling and report editing in the service, but its functionality is limited compared to Power BI Desktop."
+    }
+  },
+  {
+    "id": "46d2a64f-44e1-51d0-bf8d-2b8d6db768ec",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? In a Power BI report, selecting a category in one visualization automatically filters and highlights that category in related visualizations.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Visuals for related data in a report are automatically linked, so selecting a category filters and highlights it elsewhere."
+    }
+  },
+  {
+    "id": "530532b3-928c-5e0a-b1d4-16c6fa10e5bf",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Most analytical models include a Time dimension so measures can be aggregated across time periods.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "The module notes that most analytical models include a Time dimension."
+    }
+  },
+  {
+    "id": "269676a5-1426-5b9f-8a09-c595a00eba00",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Copilot in Power BI works in any workspace, including workspaces without a paid Fabric or Power BI Premium capacity.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "Copilot requires a workspace on a paid Fabric capacity (F2 or higher), Power BI Premium capacity (P1 or higher), or a Fabric Copilot capacity."
+    }
+  },
+  {
+    "id": "a395c7bf-9fc8-592e-ae78-d707a426f1cb",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? Hierarchies let users drill down from yearly totals to monthly totals, with the model computing aggregated values at each level at query time.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "A",
+      "explanation": "Hierarchies support drill up and drill down, with aggregates computed at each level at query time."
+    }
+  },
+  {
+    "id": "d00306da-f038-5a53-9912-59ce71021506",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 1,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-1",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "True or false? A star schema is a design where dimension tables relate to further detail tables, such as a Category table linked to a Product table.",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct": "B",
+      "explanation": "That describes a snowflake schema. In a star schema, the fact table relates directly to the dimension tables."
+    }
+  },
+  {
+    "id": "e4d27019-29ea-53ea-8539-729a2e76e919",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-2",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A regional sales manager wants a report that (1) compares revenue across six product categories and (2) shows how revenue varies by state. Which pair of visualizations fits best?",
+      "options": {
+        "A": "A pie chart for categories; a scatter plot for states",
+        "B": "A line chart for categories; a table for states",
+        "C": "A scatter plot for categories; a column chart for states",
+        "D": "A column chart for categories; a map for states"
+      },
+      "correct": "D",
+      "explanation": "Column charts compare values across discrete categories, and maps compare values across geographic areas. Not A: pie charts show proportions and scatter plots compare two numeric measures. Not B: line charts suit trends over time, and a table loses the geographic view. Not C: scatter plots don't fit categorical comparison."
+    }
+  },
+  {
+    "id": "1f657a8a-d67a-5596-9e1a-a6569f33d78c",
+    "type": "mcq",
+    "domain": "analytics-workloads",
+    "topic": "Explore fundamentals of data visualization",
+    "difficulty": 2,
+    "source": "bank",
+    "tags": [
+      "analytics-workloads",
+      "explore-fundamentals-of-data-visualization",
+      "level-2",
+      "order:9",
+      "module:explore-fundamentals-data-visualization",
+      "path:lp4",
+      "primary-path:lp4"
+    ],
+    "content": {
+      "question": "A company's large sales dataset is stored as Delta tables in OneLake. Analysts want in-memory query speed without copying the data into the semantic model, and business users want to view the reports on their phones. Which approach fits?",
+      "options": {
+        "A": "An Import mode semantic model, with reports exported to PDF for users",
+        "B": "A Direct Lake semantic model, with reports in the Power BI service and phone app",
+        "C": "A semantic model over CSV exports, with reports available only in Power BI Desktop",
+        "D": "An Import mode semantic model, shown on a Fabric Real-Time Dashboard"
+      },
+      "correct": "B",
+      "explanation": "Direct Lake loads Delta tables from OneLake into memory without copying them into the model; reports in the Power BI service can be viewed on mobile with the Power BI phone app. Not A/D: Import mode copies data into the model. Not C: Desktop-only reports can't be consumed by business users on their phones."
+    }
+  }
+]
